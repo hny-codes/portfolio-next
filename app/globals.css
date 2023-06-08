@@ -34,6 +34,16 @@
     --ring: 215 20.2% 65.1%;
  
     --radius: 0.5rem;
+
+    /* COLORS */
+    /* Primary */
+    --clr-primary-01: #000814;
+    --clr-primary-02: #001D3D;
+    --clr-primary-03: #003566;
+
+    /* Secondary */
+    --clr-secondary-01: #FFC300;
+    --clr-secondary-02: #FFD60A;
   }
  
   .dark {
@@ -72,10 +82,10 @@
  
 @layer base {
   * {
-    @apply border-border;
+    @apply border-border m-0 p-0 box-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-[var(--clr-primary-01)] text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
