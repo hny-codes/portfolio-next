@@ -47,7 +47,7 @@ const SheetOverlay = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <SheetPrimitive.Overlay
     className={cn(
-      "fixed inset-0 z-50 bg-background/80 backdrop-blur-sm transition-all duration-100 data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in",
+      "fixed inset-0 z-50 bg-none backdrop-blur-sm transition-all duration-100 data-[state=closed]:animate-out data-[state=closed]:fade-out data-[state=open]:fade-in",
       className
     )}
     {...props}
@@ -57,92 +57,92 @@ const SheetOverlay = React.forwardRef<
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName
 
 const sheetVariants = cva(
-  "fixed z-50 scale-100 gap-4 bg-background p-6 opacity-100 shadow-lg border",
+  'fixed z-50 scale-100 gap-4 bg-[#001d3d] p-6 opacity-100 shadow-lg text-white',
   {
     variants: {
       position: {
-        top: "animate-in slide-in-from-top w-full duration-300",
-        bottom: "animate-in slide-in-from-bottom w-full duration-300",
-        left: "animate-in slide-in-from-left h-full duration-300",
-        right: "animate-in slide-in-from-right h-full duration-300",
+        top: 'animate-in slide-in-from-top w-full duration-300',
+        bottom: 'animate-in slide-in-from-bottom w-full duration-300',
+        left: 'animate-in slide-in-from-left h-full duration-300',
+        right: 'animate-in slide-in-from-right h-full duration-300',
       },
       size: {
-        content: "",
-        default: "",
-        sm: "",
-        lg: "",
-        xl: "",
-        full: "",
+        content: '',
+        default: '',
+        sm: '',
+        lg: '',
+        xl: '',
+        full: '',
       },
     },
     compoundVariants: [
       {
-        position: ["top", "bottom"],
-        size: "content",
-        class: "max-h-screen",
+        position: ['top', 'bottom'],
+        size: 'content',
+        class: 'max-h-screen',
       },
       {
-        position: ["top", "bottom"],
-        size: "default",
-        class: "h-1/3",
+        position: ['top', 'bottom'],
+        size: 'default',
+        class: 'h-1/3',
       },
       {
-        position: ["top", "bottom"],
-        size: "sm",
-        class: "h-1/4",
+        position: ['top', 'bottom'],
+        size: 'sm',
+        class: 'h-1/4',
       },
       {
-        position: ["top", "bottom"],
-        size: "lg",
-        class: "h-1/2",
+        position: ['top', 'bottom'],
+        size: 'lg',
+        class: 'h-1/2',
       },
       {
-        position: ["top", "bottom"],
-        size: "xl",
-        class: "h-5/6",
+        position: ['top', 'bottom'],
+        size: 'xl',
+        class: 'h-5/6',
       },
       {
-        position: ["top", "bottom"],
-        size: "full",
-        class: "h-screen",
+        position: ['top', 'bottom'],
+        size: 'full',
+        class: 'h-screen',
       },
       {
-        position: ["right", "left"],
-        size: "content",
-        class: "max-w-screen",
+        position: ['right', 'left'],
+        size: 'content',
+        class: 'max-w-screen',
       },
       {
-        position: ["right", "left"],
-        size: "default",
-        class: "w-1/3",
+        position: ['right', 'left'],
+        size: 'default',
+        class: 'w-1/3',
       },
       {
-        position: ["right", "left"],
-        size: "sm",
-        class: "w-1/4",
+        position: ['right', 'left'],
+        size: 'sm',
+        class: 'w-1/4',
       },
       {
-        position: ["right", "left"],
-        size: "lg",
-        class: "w-1/2",
+        position: ['right', 'left'],
+        size: 'lg',
+        class: 'w-1/2',
       },
       {
-        position: ["right", "left"],
-        size: "xl",
-        class: "w-5/6",
+        position: ['right', 'left'],
+        size: 'xl',
+        class: 'w-5/6',
       },
       {
-        position: ["right", "left"],
-        size: "full",
-        class: "w-screen",
+        position: ['right', 'left'],
+        size: 'full',
+        class: 'w-screen',
       },
     ],
     defaultVariants: {
-      position: "right",
-      size: "default",
+      position: 'right',
+      size: 'default',
     },
   }
-)
+);
 
 export interface DialogContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
