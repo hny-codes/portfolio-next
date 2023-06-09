@@ -7,25 +7,26 @@ export default function Hero() {
       <div className=''>
         <h1 className='text-clamp mb-16 sm:mb-0'>
           👀
-          <span className='hero-span'>H</span>NY-
-          <span className='hero-span'>C</span>ODES
+          <span className='text-span'>H</span>NY-
+          <span className='text-span'>C</span>ODES
         </h1>
       </div>
       <div className='w-[85%] mx-auto text-lg sm:text-left'>
         <h2 className='mb-4 p-2'>
-          <span className='hero-span'>Front-end developer</span> at day, gamer
+          <span className='text-span'>Front-end developer</span> at day, gamer
           at night
         </h2>
         <h3 className='mb-4 p-2'>
-          Specialization in <span className='hero-span'>React</span>, the web,
+          Specialization in <span className='text-span'>React</span>, the web,
           and more
         </h3>
         <h3 className='mb-4 p-2'>
-          <span className='text-2xl'>🎮</span> Call me <span className='hero-span'>Henry</span>!
+          <span className='text-2xl'>🎮</span> Call me{' '}
+          <span className='text-span'>Henry</span>!
         </h3>
         <div className='flex flex-col sm:flex-row sm:p-2 items-center gap-4'>
           <Button variant={'outline'} asChild>
-            <Link href={'/'}>About Me</Link>
+            <Link href={'/about'}>About Me</Link>
           </Button>
           <Button variant={'outline'} asChild>
             <Link href={'/'}>Contact</Link>

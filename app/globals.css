@@ -92,7 +92,7 @@
 }
 
 @layer utilities {
-  .hero-span {
+  .text-span {
     @apply text-[var(--clr-secondary-01)]
   }
 }
