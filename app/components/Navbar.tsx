@@ -36,19 +36,19 @@ export default function Navbar() {
                 </Button>
               </div>
             </SheetTrigger>
-            <SheetContent>
+            <SheetContent size={'full'}>
               <SheetHeader className='mt-20'>
                 <Link href={'/'}>
-                  <SheetClose>Home</SheetClose>
+                  <SheetClose className='text-3xl mb-8'>Home</SheetClose>
                 </Link>
                 <Link href={'/'}>
-                  <SheetClose>About</SheetClose>
+                  <SheetClose className='text-3xl mb-8'>About</SheetClose>
                 </Link>
                 <Link href={'/'}>
-                  <SheetClose>Projects</SheetClose>
+                  <SheetClose className='text-3xl mb-8'>Projects</SheetClose>
                 </Link>
                 <Link href={'/'}>
-                  <SheetClose>Contact</SheetClose>
+                  <SheetClose className='text-3xl'>Contact</SheetClose>
                 </Link>
               </SheetHeader>
             </SheetContent>
