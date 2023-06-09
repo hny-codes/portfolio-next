@@ -90,3 +90,9 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
   }
 }
+
+@layer utilities {
+  .hero-span {
+    @apply text-[var(--clr-secondary-01)]
+  }
+}
