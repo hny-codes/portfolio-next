@@ -160,13 +160,13 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-10 top-9 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary">
-        <X className="h-8 w-8" />
-        <span className="sr-only">Close</span>
+      <SheetPrimitive.Close className='absolute right-10 top-9 rounded-sm ring-offset-background transition-opacity hover:opacity-100 hover:text-[#ffc300] focus:outline-none focus:ring-2 focus:ring-[#ffc300] focus:ring-offset-[#ffc300] disabled:pointer-events-none data-[state=open]:bg-secondary'>
+        <X className='h-8 w-8' />
+        <span className='sr-only'>Close</span>
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>
   </SheetPortal>
-))
+));
 SheetContent.displayName = SheetPrimitive.Content.displayName
 
 const SheetHeader = ({
