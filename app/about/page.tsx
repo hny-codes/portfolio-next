@@ -4,7 +4,7 @@ import { AstroIcon, CssIcon, DiscordIcon, FigmaIcon, GitIcon, GithubIcon, HTMLIc
 export default function AboutPage() {
   return (
     <main className='text-white mb-12'>
-      <div className='w-[85%] mx-auto'>
+      <div className='w-[85%] sm:w-full sm:px-8 mx-auto'>
         <section className='mb-20'>
           <article>
             <header className='mb-8'>
@@ -61,7 +61,7 @@ export default function AboutPage() {
             </p>
           </article>
         </section>
-        <section className='mb-40'>
+        <section className='mb-40 sm:flex sm:gap-8 sm:justify-around'>
           <article className='mb-20'>
             <header className='mb-4'>
               <h1 className='font-bold text-3xl mb-2'>My Skills Tree</h1>
