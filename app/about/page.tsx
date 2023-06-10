@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { AstroIcon, CssIcon, DiscordIcon, FigmaIcon, GitIcon, GithubIcon, HTMLIcon, JavaScriptIcon, NextIcon, PythonIcon, ReactIcon, TailwindIcon, VSCodeIcon, ViteIcon } from './components/SkillsIcon';
 
 export default function AboutPage() {
   return (
@@ -60,14 +61,41 @@ export default function AboutPage() {
             </p>
           </article>
         </section>
-        <section>
-          <h1 className='font-bold text-3xl'>My Skills Tree</h1>
-          <h2 className='text-sm italic'>
-            I still got more skill points to spare!
-          </h2>
-          <div>
-            
-          </div>
+        <section className='mb-40'>
+          <article className='mb-20'>
+            <header className='mb-4'>
+              <h1 className='font-bold text-3xl mb-2'>My Skills Tree</h1>
+              <h2 className='text-sm italic'>
+                I still got more skill points to spare!
+              </h2>
+            </header>
+            <div className='flex gap-2 flex-wrap'>
+              <HTMLIcon />
+              <CssIcon />
+              <JavaScriptIcon />
+              <ReactIcon />
+              <TailwindIcon />
+              <PythonIcon />
+            </div>
+          </article>
+          <article>
+            <header className='mb-4'>
+              <h1 className='font-bold text-3xl mb-2'>My Tools Inventory</h1>
+              <h2 className='text-sm italic'>
+                My inventory ain&apos;t full yet!
+              </h2>
+            </header>
+            <div className='flex gap-2 flex-wrap'>
+              <AstroIcon />
+              <NextIcon />
+              <DiscordIcon />
+              <ViteIcon />
+              <GitIcon />
+              <GithubIcon />
+              <VSCodeIcon />
+              <FigmaIcon />
+            </div>
+          </article>
         </section>
       </div>
     </main>
