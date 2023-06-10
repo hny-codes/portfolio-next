@@ -19,11 +19,11 @@ import {
 export default function AboutPage() {
   return (
     <main className='text-white mb-12'>
-      <div className='px-8 mx-auto'>
+      <div className='px-8 w-[95%] sm:w-full'>
         <section className='mb-20'>
           <article>
             <header className='mb-8'>
-              <h1 className='font-bold text-3xl'>Character Profile</h1>
+              <h1 className='font-bold text-3xl mb-2'>Character Profile</h1>
               <h2 className='text-sm italic'>
                 <span className='text-span font-bold'>WARNING</span>:
                 Professional at Google-fu, will search upon aggro*&emsp;
@@ -76,7 +76,7 @@ export default function AboutPage() {
             </p>
           </article>
         </section>
-        <section className='mb-40 sm:flex sm:gap-8 sm:justify-around'>
+        <section className='mb-32 sm:mb-10 sm:flex sm:gap-8 sm:justify-around'>
           <article className='mb-20'>
             <header className='mb-4'>
               <h1 className='font-bold text-3xl mb-2'>My Skills Tree</h1>
