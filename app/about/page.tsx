@@ -19,8 +19,8 @@ import {
 export default function AboutPage() {
   return (
     <main className='text-white mb-12 '>
-      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto'>
-        <section className='mb-20'>
+      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto sm:flex sm:gap-8'>
+        <section className='mb-20 sm:w-[80ch]'>
           <article>
             <header className='mb-8'>
               <h1 className='font-bold text-3xl mb-2'>Character Profile</h1>
@@ -50,6 +50,7 @@ export default function AboutPage() {
               Seeing simple, yet flashy animated graphics move across the screen
               tickled my brain but only accessible via a .swf file. Thus, my
               interest into this field began with one sole question: <br />
+              <br />
               <span className='text-span font-bold text-lg'>
                 &quot;What if I made this accessible to anyone for enjoy?&quot;
               </span>
