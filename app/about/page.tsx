@@ -1,10 +1,25 @@
 import Image from 'next/image';
-import { AstroIcon, CssIcon, DiscordIcon, FigmaIcon, GitIcon, GithubIcon, HTMLIcon, JavaScriptIcon, NextIcon, PythonIcon, ReactIcon, TailwindIcon, VSCodeIcon, ViteIcon } from './components/SkillsIcon';
+import {
+  AstroIcon,
+  CssIcon,
+  DiscordIcon,
+  FigmaIcon,
+  GitIcon,
+  GithubIcon,
+  HTMLIcon,
+  JavaScriptIcon,
+  NextIcon,
+  PythonIcon,
+  ReactIcon,
+  TailwindIcon,
+  VSCodeIcon,
+  ViteIcon,
+} from './components/SkillsIcon';
 
 export default function AboutPage() {
   return (
     <main className='text-white mb-12'>
-      <div className='w-[85%] sm:w-full sm:px-8 mx-auto'>
+      <div className='px-8 mx-auto'>
         <section className='mb-20'>
           <article>
             <header className='mb-8'>
