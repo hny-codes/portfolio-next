@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className='gap-4 hidden sm:flex'>
           <Link href={'/'}>Home</Link>
           <Link href={'/about'}>About</Link>
-          <Link href={'/'}>Projects</Link>
+          <Link href={'/projects'}>Projects</Link>
           <Link href={'/'}>Contact</Link>
         </div>
         <div className='sm:hidden'>
@@ -44,7 +44,7 @@ export default function Navbar() {
                 <Link href={'/about'}>
                   <SheetClose className='text-3xl mb-8'>About</SheetClose>
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/projects'}>
                   <SheetClose className='text-3xl mb-8'>Projects</SheetClose>
                 </Link>
                 <Link href={'/'}>
