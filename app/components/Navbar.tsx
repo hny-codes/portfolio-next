@@ -14,7 +14,7 @@ import { Menu } from 'lucide-react';
 export default function Navbar() {
   return (
     <nav className=''>
-      <div className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white'>
+      <div className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
         <Link href={'/'}>
           <Avatar>
             <AvatarImage src='https://avatars.githubusercontent.com/u/104471437?v=4' />

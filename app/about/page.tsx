@@ -18,8 +18,8 @@ import {
 
 export default function AboutPage() {
   return (
-    <main className='text-white mb-12'>
-      <div className='px-8 w-[95%] sm:w-full'>
+    <main className='text-white mb-12 '>
+      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto'>
         <section className='mb-20'>
           <article>
             <header className='mb-8'>

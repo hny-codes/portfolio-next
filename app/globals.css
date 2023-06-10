@@ -45,6 +45,8 @@
     --clr-secondary-01: #ffc300;
     --clr-secondary-02: #ffd60a;
 
+    /* LAYOUT */
+    --max-width: 1330px;
   }
 
   .dark {
