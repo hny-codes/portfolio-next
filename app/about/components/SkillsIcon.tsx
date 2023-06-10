@@ -21,6 +21,7 @@ export function AstroIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Astro</h1>
             <p>Blazing fast web framework</p>
           </TooltipContent>
         </Tooltip>
@@ -43,6 +44,7 @@ export function CssIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>CSS</h1>
             <p>Language to beautify the web</p>
           </TooltipContent>
         </Tooltip>
@@ -65,6 +67,7 @@ export function DiscordIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Discord</h1>
             <p>Social platform for communication</p>
           </TooltipContent>
         </Tooltip>
@@ -87,6 +90,7 @@ export function FigmaIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Figma</h1>
             <p>My go-to design and prototyping tool</p>
           </TooltipContent>
         </Tooltip>
@@ -109,6 +113,7 @@ export function GitIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Git</h1>
             <p>Version control for us developers</p>
           </TooltipContent>
         </Tooltip>
@@ -131,6 +136,7 @@ export function GithubIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Github</h1>
             <p>Code repository using Git </p>
           </TooltipContent>
         </Tooltip>
@@ -153,6 +159,7 @@ export function HTMLIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>HTML</h1>
             <p>Markup language to build the web</p>
           </TooltipContent>
         </Tooltip>
@@ -175,6 +182,7 @@ export function JavaScriptIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>JavaScript</h1>
             <p>Scripting language for the world-wide web</p>
           </TooltipContent>
         </Tooltip>
@@ -197,6 +205,7 @@ export function NextIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Next</h1>
             <p>Powerful all-in-one web framework</p>
           </TooltipContent>
         </Tooltip>
@@ -219,6 +228,7 @@ export function PythonIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Python</h1>
             <p>My go-to swiss-army scripting language</p>
           </TooltipContent>
         </Tooltip>
@@ -241,6 +251,7 @@ export function ReactIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>React</h1>
             <p>Javascript Library for the modern web</p>
           </TooltipContent>
         </Tooltip>
@@ -263,6 +274,7 @@ export function TailwindIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Tailwind</h1>
             <p>Utility-first CSS framework</p>
           </TooltipContent>
         </Tooltip>
@@ -285,6 +297,7 @@ export function ViteIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>Vite</h1>
             <p>Modern bundling tool with speed</p>
           </TooltipContent>
         </Tooltip>
@@ -307,6 +320,7 @@ export function VSCodeIcon() {
             />
           </TooltipTrigger>
           <TooltipContent>
+            <h1 className='font-bold'>VS Code</h1>
             <p>My development environment of choice</p>
           </TooltipContent>
         </Tooltip>
