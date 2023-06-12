@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href={'/'}>Home</Link>
           <Link href={'/about'}>About</Link>
           <Link href={'/projects'}>Projects</Link>
-          <Link href={'/'}>Contact</Link>
+          <Link href={'/contact'}>Contact</Link>
         </div>
         <div className='sm:hidden'>
           <Sheet>
@@ -47,7 +47,7 @@ export default function Navbar() {
                 <Link href={'/projects'}>
                   <SheetClose className='text-3xl mb-8'>Projects</SheetClose>
                 </Link>
-                <Link href={'/'}>
+                <Link href={'/contact'}>
                   <SheetClose className='text-3xl'>Contact</SheetClose>
                 </Link>
               </SheetHeader>

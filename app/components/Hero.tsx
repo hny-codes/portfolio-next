@@ -29,7 +29,7 @@ export default function Hero() {
             <Link href={'/about'}>About Me</Link>
           </Button>
           <Button variant={'outline'} asChild>
-            <Link href={'/'}>Contact</Link>
+            <Link href={'/contact'}>Contact</Link>
           </Button>
         </div>
       </div>
