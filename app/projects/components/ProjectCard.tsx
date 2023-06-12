@@ -2,30 +2,29 @@ import Image from 'next/image';
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
 
 type Props = {
+  link: string;
   title: string;
-  desc: string;
-  content: string
+  content: string;
+  src: string;
+  alt: string;
 };
 
-export default function ProjectCard({ title, desc, content }: Props) {
+export default function ProjectCard({ link, title, content, src, alt }: Props) {
   return (
-    <>
-      <Card>
+    <a href={link} target='_blank'>
+      <Card className='sm:max-w-[450px] h-full'>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          <CardDescription>{desc}</CardDescription>
+          <Image src={src} alt={alt} width={500} height={100} />
         </CardHeader>
-        <CardContent>
-          {content}
-        </CardContent>
+        <CardContent>{content}</CardContent>
       </Card>
-    </>
+    </a>
   );
 }
