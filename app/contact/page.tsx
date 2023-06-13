@@ -98,13 +98,21 @@ export default function ContactPage() {
               </CardDescription>
             </CardHeader>
             <CardFooter className='flex flex-col sm:flex-row gap-2 justify-between'>
-              <Button onClick={handleClickAccept}>
+              <Button
+                variant={'friend'}
+                onClick={handleClickAccept}
+                className={`${request === true ? 'btn-select' : ''}`}
+              >
                 <CheckCircle2
                   className={`${request === true ? 'block' : 'hidden'} mr-2`}
                 />
                 Accept
               </Button>
-              <Button onClick={handleClickDecline}>
+              <Button
+                variant={'friend'}
+                onClick={handleClickDecline}
+                className={`${request === false ? 'btn-select' : ''}`}
+              >
                 <XCircle
                   className={`${request === false ? 'block' : 'hidden'} mr-2`}
                 />

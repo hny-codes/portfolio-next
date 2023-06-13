@@ -105,4 +105,8 @@
   .alert {
     @apply absolute z-10 top-0 left-0 right-0 shadow-lg max-w-sm;
   }
+
+  .btn-select {
+    @apply bg-[var(--clr-secondary-01)] text-accent-foreground
+  }
 }
