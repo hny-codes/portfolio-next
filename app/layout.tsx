@@ -8,6 +8,9 @@ import Footer from './components/Footer';
 export const metadata = {
   title: 'Hny-codes',
   description: 'A portfolio made by hny-codes, built with Next',
+  icons: {
+    icon: '/images/favicon.ico',
+  },
 };
 
 export default function RootLayout({
