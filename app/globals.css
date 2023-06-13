@@ -95,6 +95,10 @@
 
 @layer utilities {
   .text-span {
-    @apply text-[var(--clr-secondary-01)]
+    @apply text-[var(--clr-secondary-01)];
+  }
+
+  .alert {
+    @apply absolute z-10 top-0 left-0 right-0 shadow-lg;
   }
 }
