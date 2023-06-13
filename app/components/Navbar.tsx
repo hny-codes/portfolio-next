@@ -46,17 +46,17 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent size={'full'}>
               <SheetHeader className='mt-20'>
-                <Link href={'/'} className='link-hover'>
-                  <SheetClose className='text-3xl mb-8'>Home</SheetClose>
+                <Link href={'/'} className='link-hover w-fit mx-auto'>
+                  <SheetClose className='text-3xl p-4'>Home</SheetClose>
                 </Link>
-                <Link href={'/about'} className='link-hover'>
-                  <SheetClose className='text-3xl mb-8'>About</SheetClose>
+                <Link href={'/about'} className='link-hover w-fit mx-auto'>
+                  <SheetClose className='text-3xl p-4'>About</SheetClose>
                 </Link>
-                <Link href={'/projects'} className='link-hover'>
-                  <SheetClose className='text-3xl mb-8'>Projects</SheetClose>
+                <Link href={'/projects'} className='link-hover w-fit mx-auto'>
+                  <SheetClose className='text-3xl p-4'>Projects</SheetClose>
                 </Link>
-                <Link href={'/contact'} className='link-hover'>
-                  <SheetClose className='text-3xl'>Contact</SheetClose>
+                <Link href={'/contact'} className='link-hover w-fit mx-auto'>
+                  <SheetClose className='text-3xl p-4'>Contact</SheetClose>
                 </Link>
               </SheetHeader>
             </SheetContent>
