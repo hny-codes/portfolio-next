@@ -9,7 +9,7 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, Github, Linkedin } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -59,6 +59,21 @@ export default function Navbar() {
                   <SheetClose className='text-3xl p-4'>Contact</SheetClose>
                 </Link>
               </SheetHeader>
+              <div className='flex gap-8 justify-center items-center my-16'>
+                <a
+                  href='https://github.com/hny-codes'
+                  target='_blank'
+                  className='hover:text-[var(--clr-secondary-01)] link-hover'
+                >
+                  <Github />
+                </a>
+                <a
+                  href='#'
+                  className='hover:text-[var(--clr-secondary-01)] link-hover'
+                >
+                  <Linkedin />
+                </a>
+              </div>
             </SheetContent>
           </Sheet>
         </div>
