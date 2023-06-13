@@ -22,10 +22,18 @@ export default function Navbar() {
           </Avatar>
         </Link>
         <div className='gap-4 hidden sm:flex'>
-          <Link href={'/'}>Home</Link>
-          <Link href={'/about'}>About</Link>
-          <Link href={'/projects'}>Projects</Link>
-          <Link href={'/contact'}>Contact</Link>
+          <Link href={'/'} className='link-hover'>
+            Home
+          </Link>
+          <Link href={'/about'} className='link-hover'>
+            About
+          </Link>
+          <Link href={'/projects'} className='link-hover'>
+            Projects
+          </Link>
+          <Link href={'/contact'} className='link-hover'>
+            Contact
+          </Link>
         </div>
         <div className='sm:hidden'>
           <Sheet>
@@ -38,16 +46,16 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent size={'full'}>
               <SheetHeader className='mt-20'>
-                <Link href={'/'}>
+                <Link href={'/'} className='link-hover'>
                   <SheetClose className='text-3xl mb-8'>Home</SheetClose>
                 </Link>
-                <Link href={'/about'}>
+                <Link href={'/about'} className='link-hover'>
                   <SheetClose className='text-3xl mb-8'>About</SheetClose>
                 </Link>
-                <Link href={'/projects'}>
+                <Link href={'/projects'} className='link-hover'>
                   <SheetClose className='text-3xl mb-8'>Projects</SheetClose>
                 </Link>
-                <Link href={'/contact'}>
+                <Link href={'/contact'} className='link-hover'>
                   <SheetClose className='text-3xl'>Contact</SheetClose>
                 </Link>
               </SheetHeader>

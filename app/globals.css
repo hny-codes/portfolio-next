@@ -98,6 +98,10 @@
     @apply text-[var(--clr-secondary-01)];
   }
 
+  .link-hover {
+    @apply hover:text-[var(--clr-secondary-01)] transition-all
+  }
+
   .alert {
     @apply absolute z-10 top-0 left-0 right-0 shadow-lg;
   }

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className='flex justify-between items-center py-2.5 px-8 sm:max-w-[var(--max-width)] sm:mx-auto'>
         <h3 className=''>
           Built with{' '}
-          <a href='https://nextjs.org/' target='_blank' className='underline'>
+          <a href='https://nextjs.org/' target='_blank' className='underline link-hover'>
             Next
           </a>
         </h3>
@@ -14,11 +14,11 @@ export default function Footer() {
           <a
             href='https://github.com/hny-codes'
             target='_blank'
-            className='hover:text-[var(--clr-secondary-01)]'
+            className='hover:text-[var(--clr-secondary-01)] link-hover'
           >
             <Github />
           </a>
-          <a href='#' className='hover:text-[var(--clr-secondary-01)]'>
+          <a href='#' className='hover:text-[var(--clr-secondary-01)] link-hover'>
             <Linkedin />
           </a>
         </div>
