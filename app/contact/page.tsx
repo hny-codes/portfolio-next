@@ -84,7 +84,7 @@ export default function ContactPage() {
               regardless!
             </AlertDescription>
           </Alert>
-          <Card className='w-[60%] mx-auto my-8'>
+          <Card className='w-[60%] mx-auto my-8 max-w-lg'>
             <CardHeader>
               <CardTitle className='flex items-center gap-4 font-bold'>
                 <Avatar>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 Junior Front-end Developer
               </CardDescription>
             </CardHeader>
-            <CardFooter className='flex justify-between'>
+            <CardFooter className='flex flex-col sm:flex-row gap-2 justify-between'>
               <Button onClick={handleClickAccept}>
                 <CheckCircle2
                   className={`${request === true ? 'block' : 'hidden'} mr-2`}
@@ -113,7 +113,7 @@ export default function ContactPage() {
             </CardFooter>
           </Card>
           <Card
-            className={`w-[80%] mx-auto ${
+            className={`w-[80%] mx-auto max-w-2xl ${
               request === null ? 'hidden' : 'block'
             }`}
           >
