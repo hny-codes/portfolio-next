@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { ArrowUpRight } from 'lucide-react';
 
 type Props = {
   link: string;
@@ -17,7 +18,7 @@ type Props = {
 
 export default function ProjectCard({ link, title, content, src, alt }: Props) {
   return (
-    <a href={link} target='_blank'>
+    <a href={link} target='_blank' className='project-hover'>
       <Card className='sm:max-w-[450px] h-full'>
         <CardHeader>
           <CardTitle>{title}</CardTitle>

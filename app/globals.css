@@ -109,4 +109,8 @@
   .btn-select {
     @apply bg-[var(--clr-secondary-01)] text-accent-foreground
   }
+
+  .project-hover {
+    @apply border-4 border-transparent hover:border-[var(--clr-secondary-01)] rounded-xl transition
+  }
 }
