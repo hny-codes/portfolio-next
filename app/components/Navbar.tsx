@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -10,6 +12,24 @@ import {
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
 import { Menu, Github, Linkedin } from 'lucide-react';
+import { motion } from 'framer-motion';
+
+const navVariants = {
+  hidden: { opacity: 0, y: -50 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.175,
+      staggerChildren: 0.35,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: -50 },
+  show: { opacity: 1, y: 0 },
+};
 
 export default function Navbar() {
   return (
@@ -46,18 +66,39 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent size={'full'}>
               <SheetHeader className='mt-20'>
-                <Link href={'/'} className='link-hover w-fit mx-auto'>
-                  <SheetClose className='text-3xl p-4'>Home</SheetClose>
-                </Link>
-                <Link href={'/about'} className='link-hover w-fit mx-auto'>
-                  <SheetClose className='text-3xl p-4'>About</SheetClose>
-                </Link>
-                <Link href={'/projects'} className='link-hover w-fit mx-auto'>
-                  <SheetClose className='text-3xl p-4'>Projects</SheetClose>
-                </Link>
-                <Link href={'/contact'} className='link-hover w-fit mx-auto'>
-                  <SheetClose className='text-3xl p-4'>Contact</SheetClose>
-                </Link>
+                <motion.div
+                  initial='hidden'
+                  whileInView='show'
+                  variants={navVariants}
+                  className='flex flex-col'
+                >
+                  <motion.div variants={item}>
+                    <Link href={'/'} className='link-hover w-fit mx-auto'>
+                      <SheetClose className='text-3xl p-4'>Home</SheetClose>
+                    </Link>
+                  </motion.div>
+                  <motion.div variants={item}>
+                    <Link href={'/about'} className='link-hover w-fit mx-auto'>
+                      <SheetClose className='text-3xl p-4'>About</SheetClose>
+                    </Link>
+                  </motion.div>
+                  <motion.div variants={item}>
+                    <Link
+                      href={'/projects'}
+                      className='link-hover w-fit mx-auto'
+                    >
+                      <SheetClose className='text-3xl p-4'>Projects</SheetClose>
+                    </Link>
+                  </motion.div>
+                  <motion.div variants={item}>
+                    <Link
+                      href={'/contact'}
+                      className='link-hover w-fit mx-auto'
+                    >
+                      <SheetClose className='text-3xl p-4'>Contact</SheetClose>
+                    </Link>
+                  </motion.div>
+                </motion.div>
               </SheetHeader>
               <div className='flex gap-8 justify-center items-center my-16'>
                 <a
