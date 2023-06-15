@@ -19,6 +19,48 @@ import {
   XCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { AnimatePresence, motion } from 'framer-motion';
+
+// Framer Motion values
+const duration: number = 0.5;
+const notifKeyframes = {
+  opacity: [0, 1, 1, 1, 1, 1, 1, 0],
+  y: [-200, -50, -50, -50, -50, -50, -200, -500],
+};
+
+const notifVariants = {
+  before: {
+    opacity: 0,
+    y: -200,
+  },
+  after: {
+    opacity: notifKeyframes.opacity,
+    y: notifKeyframes.y,
+  },
+};
+
+const cardVariants = {
+  before: { opacity: 1, y: 100 },
+  after: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration,
+    },
+  },
+};
+
+const contactVariants = {
+  before: { opacity: 0, y: 200 },
+  after: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration,
+      delay: duration,
+    },
+  },
+};
 
 export default function ContactPage() {
   const [request, setRequest] = useState<boolean | null>(null);
@@ -44,117 +86,154 @@ export default function ContactPage() {
     <main className='text-white'>
       <div>
         <section className='relative'>
-          <Alert
-            className={`w-[80%] mx-auto alert ${
-              request === null ? 'block' : 'hidden'
-            }`}
-          >
-            <AlertTitle className='flex items-center gap-2 font-bold'>
-              <AlertCircle color='#000000' />
-              Alert!
-            </AlertTitle>
-            <AlertDescription>You got 1 notification.</AlertDescription>
-          </Alert>
-          <Alert
-            className={`w-[80%] mx-auto alert ${
-              request === true ? 'block' : 'hidden'
-            }`}
-          >
-            <AlertTitle className='flex items-center gap-2 font-bold'>
-              <div className='flex items-center gap-2'>
-                <CheckCircle2 /> {greeting}
-              </div>
-            </AlertTitle>
-            <AlertDescription>
-              Looking forward to getting to know you!
-            </AlertDescription>
-          </Alert>
-          <Alert
-            className={`w-[80%] mx-auto alert ${
-              request === false ? 'block' : 'hidden'
-            }`}
-          >
-            <AlertTitle className='flex items-center gap-2 font-bold'>
-              <div className='flex items-center gap-2'>
-                <XCircle /> {greeting}
-              </div>
-            </AlertTitle>
-            <AlertDescription>
-              No hard feelings! I&apos;ll leave you my contact information
-              regardless!
-            </AlertDescription>
-          </Alert>
-          <Card className='w-[60%] mx-auto my-8 max-w-lg'>
-            <CardHeader>
-              <CardTitle className='flex items-center gap-4 font-bold'>
-                <Avatar>
-                  <AvatarImage src='https://avatars.githubusercontent.com/u/104471437?v=4' />
-                  <AvatarFallback>HN</AvatarFallback>
-                </Avatar>
-                hny-codes has sent you a friend request!
-              </CardTitle>
-              <CardDescription className='ml-14'>
-                Junior Front-end Developer
-              </CardDescription>
-            </CardHeader>
-            <CardFooter className='flex flex-col sm:flex-row gap-2 justify-between'>
-              <Button
-                variant={'friend'}
-                onClick={handleClickAccept}
-                className={`${request === true ? 'btn-select' : ''}`}
+          <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: -200 }}
+              animate={{
+                opacity: notifKeyframes.opacity,
+                y: notifKeyframes.y,
+              }}
+              transition={{ duration: duration + 3 }}
+            >
+              <Alert
+                className={`w-[80%] mx-auto alert ${
+                  request === null ? 'block' : 'hidden'
+                }`}
               >
-                <CheckCircle2
-                  className={`${request === true ? 'block' : 'hidden'} mr-2`}
-                />
-                Accept
-              </Button>
-              <Button
-                variant={'friend'}
-                onClick={handleClickDecline}
-                className={`${request === false ? 'btn-select' : ''}`}
+                <AlertTitle className='flex items-center gap-2 font-bold'>
+                  <AlertCircle color='#000000' />
+                  Alert!
+                </AlertTitle>
+                <AlertDescription>You got 1 notification.</AlertDescription>
+              </Alert>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -200 }}
+              animate={request === null ? 'before' : 'after'}
+              transition={{ duration: duration + 4 }}
+              variants={notifVariants}
+            >
+              <Alert
+                className={`w-[80%] mx-auto z-20 alert ${
+                  request === true ? 'block' : 'hidden'
+                }`}
               >
-                <XCircle
-                  className={`${request === false ? 'block' : 'hidden'} mr-2`}
-                />
-                Decline
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card
-            className={`w-[80%] mx-auto max-w-2xl ${
-              request === null ? 'hidden' : 'block'
-            }`}
+                <AlertTitle className='flex items-center gap-2 font-bold'>
+                  <div className='flex items-center gap-2'>
+                    <CheckCircle2 /> {greeting}
+                  </div>
+                </AlertTitle>
+                <AlertDescription>
+                  Looking forward to getting to know you!
+                </AlertDescription>
+              </Alert>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -200 }}
+              animate={request === null ? 'before' : 'after'}
+              transition={{ duration: duration + 4 }}
+              variants={notifVariants}
+            >
+              <Alert
+                className={`w-[80%] mx-auto alert ${
+                  request === false ? 'block' : 'hidden'
+                }`}
+              >
+                <AlertTitle className='flex items-center gap-2 font-bold'>
+                  <div className='flex items-center gap-2'>
+                    <XCircle /> {greeting}
+                  </div>
+                </AlertTitle>
+                <AlertDescription>
+                  No hard feelings! I&apos;ll leave you my contact information
+                  regardless!
+                </AlertDescription>
+              </Alert>
+            </motion.div>
+          </AnimatePresence>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={request === null ? 'before' : 'after'}
+            transition={{ duration, delay: duration }}
+            variants={cardVariants}
           >
-            <CardHeader className='flex items-center'>
-              <CardTitle>Get in contact with me!</CardTitle>
-            </CardHeader>
-            <CardContent className=''>
-              <div className=''>
-                <div className='flex flex-col justify-center items-center'>
-                  <h3 className='font-bold'>Email me!</h3>
-                  <p>hny-codes@protonmail.com</p>
+            <Card className='w-[60%] mx-auto my-8 max-w-lg'>
+              <CardHeader>
+                <CardTitle className='flex items-center gap-4 font-bold'>
+                  <Avatar>
+                    <AvatarImage src='https://avatars.githubusercontent.com/u/104471437?v=4' />
+                    <AvatarFallback>HN</AvatarFallback>
+                  </Avatar>
+                  hny-codes has sent you a friend request!
+                </CardTitle>
+                <CardDescription className='ml-14'>
+                  Junior Front-end Developer
+                </CardDescription>
+              </CardHeader>
+              <CardFooter className='flex flex-col sm:flex-row gap-2 justify-between'>
+                <Button
+                  variant={'friend'}
+                  onClick={handleClickAccept}
+                  className={`${request === true ? 'btn-select' : ''}`}
+                >
+                  <CheckCircle2
+                    className={`${request === true ? 'block' : 'hidden'} mr-2`}
+                  />
+                  Accept
+                </Button>
+                <Button
+                  variant={'friend'}
+                  onClick={handleClickDecline}
+                  className={`${request === false ? 'btn-select' : ''}`}
+                >
+                  <XCircle
+                    className={`${request === false ? 'block' : 'hidden'} mr-2`}
+                  />
+                  Decline
+                </Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+          <motion.div
+            animate={request === null ? 'before' : 'after'}
+            variants={contactVariants}
+          >
+            <Card
+              className={`w-[80%] mx-auto max-w-2xl ${
+                request === null ? 'hidden' : 'block'
+              }`}
+            >
+              <CardHeader className='flex items-center'>
+                <CardTitle>Get in contact with me!</CardTitle>
+              </CardHeader>
+              <CardContent className=''>
+                <div className=''>
+                  <div className='flex flex-col justify-center items-center'>
+                    <h3 className='font-bold'>Email me!</h3>
+                    <p>hny-codes@protonmail.com</p>
+                  </div>
+                  <div className='flex justify-evenly mt-8 font-bold'>
+                    <a
+                      href='https://github.com/hny-codes'
+                      target='_blank'
+                      className='flex flex-col items-center link-hover'
+                    >
+                      <Github />
+                      <span className='text-black'>Github</span>
+                    </a>
+                    <a
+                      href='#'
+                      target='_blank'
+                      className='flex flex-col items-center link-hover'
+                    >
+                      <Linkedin />
+                      <span className='text-black'>LinkedIn</span>
+                    </a>
+                  </div>
                 </div>
-                <div className='flex justify-evenly mt-8 font-bold'>
-                  <a
-                    href='https://github.com/hny-codes'
-                    target='_blank'
-                    className='flex flex-col items-center link-hover'
-                  >
-                    <Github />
-                    <span className='text-black'>Github</span>
-                  </a>
-                  <a
-                    href='#'
-                    target='_blank'
-                    className='flex flex-col items-center link-hover'
-                  >
-                    <Linkedin />
-                    <span className='text-black'>LinkedIn</span>
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </motion.div>
         </section>
       </div>
     </main>
