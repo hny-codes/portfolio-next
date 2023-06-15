@@ -15,6 +15,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['var(--font-montserrat)'],
+      },
       fontSize: {
         clamp: 'clamp(3rem, 5vw, 5rem)',
       },

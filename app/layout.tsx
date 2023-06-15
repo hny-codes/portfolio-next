@@ -1,9 +1,15 @@
 import './globals.css';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-// const inter = Inter({ subsets: ['latin'] });
+
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
 
 export const metadata = {
   title: 'Hny-codes',
@@ -19,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
-      <body className='relative'>
+    <html lang='en' className={`${montserrat.className}`}>
+      <body className={`relative`}>
         <Navbar />
         {children}
         <Footer />
