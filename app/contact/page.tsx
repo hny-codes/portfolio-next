@@ -66,7 +66,7 @@ export default function ContactPage() {
   const [request, setRequest] = useState<boolean | null>(null);
   const [greeting, setGreeting] = useState<string>('');
   const acceptResponses = ['Cool!', 'Great!', 'Awesome!'];
-  const declineResponses = ['Bummer!', 'Unfortunate!', 'Unlucky!'];
+  const declineResponses = ['Bummer...', 'Unfortunate...', 'Unlucky...'];
 
   const handleClickAccept = () => {
     setRequest(() => true);
@@ -109,12 +109,12 @@ export default function ContactPage() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -200 }}
-              animate={request === null ? 'before' : 'after'}
+              animate={request === true ? 'after' : 'before'}
               transition={{ duration: duration + 4 }}
               variants={notifVariants}
             >
               <Alert
-                className={`w-[80%] mx-auto z-20 alert ${
+                className={`w-[80%] mx-auto alert ${
                   request === true ? 'block' : 'hidden'
                 }`}
               >
@@ -130,7 +130,7 @@ export default function ContactPage() {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: -200 }}
-              animate={request === null ? 'before' : 'after'}
+              animate={request === false ? 'after' : 'before'}
               transition={{ duration: duration + 4 }}
               variants={notifVariants}
             >
@@ -145,8 +145,7 @@ export default function ContactPage() {
                   </div>
                 </AlertTitle>
                 <AlertDescription>
-                  No hard feelings! I&apos;ll leave you my contact information
-                  regardless!
+                  Have my contact information anyways!
                 </AlertDescription>
               </Alert>
             </motion.div>
@@ -157,10 +156,10 @@ export default function ContactPage() {
             transition={{ duration, delay: duration }}
             variants={cardVariants}
           >
-            <Card className='w-[60%] mx-auto my-8 max-w-lg'>
+            <Card className='w-[60%] mx-auto my-8 max-w-lg -z-10'>
               <CardHeader>
                 <CardTitle className='flex items-center gap-4 font-bold'>
-                  <Avatar>
+                  <Avatar className=''>
                     <AvatarImage src='https://avatars.githubusercontent.com/u/104471437?v=4' />
                     <AvatarFallback>HN</AvatarFallback>
                   </Avatar>
