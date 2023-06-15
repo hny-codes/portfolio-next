@@ -11,7 +11,7 @@ export default function page() {
             <a
               href='https://github.com/hny-codes'
               target='_blank'
-              className='underline'
+              className='underline link-hover'
             >
               Github
             </a>
