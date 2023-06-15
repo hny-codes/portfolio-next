@@ -1,34 +1,79 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Personal Portfolio
+A personal portfolio website showcasing myself with contact information, bootstrapped with Next.
 
-First, run the development server:
+## Table of Contents
+- [Purpose](#purpose)
+- [Screenshots](#screenshots)
+- [Setup](#setup)
+- [Built with](#built-with)
+- [My Process](#my-process)
+- [Resources](#resources)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+## Purpose
+The purpose of this project is to build a personal portfolio for myself as well as try out new libraries to help assist on building it - a combination of building and learning as I go. 
+
+## Screenshots
+![](/public/screenshots/screen-desktop.png)
+![](/public/screenshots/screen-mobile1.png)
+![](/public/screenshots/screen-mobile2.png)
+
+## Setup
+To run this project locally, install the necessary dependencies using NPM:
+```
+$ npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Afterward, run the project in dev mode:
+```
+$ npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Built with
+Here are the libraries I used to build this portfolio. Outside basic React with JavaScript, everything used here is a new learning experience for me.
 
-## Learn More
+- [Next.js 13.4.4](https://nextjs.org/) using App router
+- Typescript
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion Animation Library](https://www.framer.com/motion/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Lucide-Icons](https://lucide.dev/)
 
-To learn more about Next.js, take a look at the following resources:
+## My Process
+My process for developing the portfolio can be easily summed up as 3 steps:
+1. Research
+2. Prototype
+3. Development
+4. The Future
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Research
+In order to create a portfolio, I wanted some inspiration on what some modern portfolios looked like, especially one with a focus on development like mine.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+For this stage in development, I went and researched designs on these 2 sites:
+- [Dribble](https://dribbble.com/)
+- [Site Inspire](https://www.siteinspire.com/)
 
-## Deploy on Vercel
+Doing this research allowed me to gain some insight as to how to design my portfolio and taken the right steps on creating it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prototype
+After the research stage, I decided to make a rough prototype of my site using [Figma](https://www.figma.com/) design tools. Nothing too deep on the prototype, just a simple markup for what I wanted my portfolio to potentially look like, the layout, colors, etc.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Development
+Once I had an idea of what I wanted my project to look like, I went on and gather the tools I needed in order to create the design I wanted. At the same time, I also wanted to try out various libraries that I came across in my development journey, which is the secondary purpose of this project. 
+
+### The Future
+This is not a one-and-done project, as I plan on updating the site and content sometime in the future when necessary. This may include:
+- Adding more projects
+- Bug fixes
+- UI improvements
+
+## Resources
+Outside of the documentation of the libraries, here are other resources I have used for this project:
+- [Figma](https://www.figma.com/) for prototyping
+- [Coolers](https://coolors.co/) to help generate a color palette for my portfolio
+- [Site Inspire](https://www.siteinspire.com/) for research
+- [Dribble](https://dribbble.com/) for research
+- [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction) to edit shadcn components
+
+
