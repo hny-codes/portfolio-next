@@ -39,7 +39,7 @@ export default function AboutPage() {
               <a
                 href='https://en.wikipedia.org/wiki/Adobe_Flash'
                 target='_blank'
-                className='underline'
+                className='underline link-hover'
               >
                 Adobe Flash
               </a>{' '}
@@ -69,7 +69,7 @@ export default function AboutPage() {
               <a
                 href='https://www.ea.com/games/apex-legends'
                 target='_blank'
-                className='underline'
+                className='underline link-hover'
               >
                 Apex Legends
               </a>{' '}
