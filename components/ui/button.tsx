@@ -20,7 +20,7 @@ const buttonVariants = cva(
           'hover:bg-[var(--clr-secondary-01)] hover:text-accent-foreground',
         link: 'underline-offset-4 hover:underline text-primary',
         friend:
-          'bg-[var(--clr-primary-01)] text-primary-foreground border border-[var(--clr-secondary-01)] hover:text-accent-foreground hover:bg-[var(--clr-secondary-01)]',
+          'bg-[var(--clr-primary-01)] text-primary-foreground border hover:text-accent-foreground hover:bg-[var(--clr-secondary-01)]',
       },
       size: {
         default: 'h-10 py-2 px-4',
