@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {
   AstroIcon,
   CssIcon,
@@ -15,6 +14,12 @@ import {
   VSCodeIcon,
   ViteIcon,
 } from './components/SkillsIcon';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 export default function AboutPage() {
   return (
@@ -26,8 +31,21 @@ export default function AboutPage() {
               <h1 className='font-bold text-3xl mb-2'>Character Profile</h1>
               <h2 className='text-sm italic'>
                 <span className='text-span font-bold'>WARNING</span>:
-                Professional at Google-fu, will search upon aggro*&emsp;
-                <span className='line-through'>sorry, just had to</span>
+                Professional at Google-fu, will search upon{' '}
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger className='italic underline'>
+                      aggro*
+                    </TooltipTrigger>
+                    <TooltipContent className=''>
+                      <p>
+                        game terminology for becoming the state of being
+                        attacked{' '}
+                      </p>
+                      <p className='line-through'>sorry for the joke</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </h2>
             </header>
             <p className='mb-4'>
