@@ -19,7 +19,7 @@ import {
   XCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // Framer Motion values
 const duration: number = 0.5;
@@ -86,70 +86,68 @@ export default function ContactPage() {
     <main className='text-white'>
       <div>
         <section className='relative'>
-          <AnimatePresence>
-            <motion.div
-              initial={{ opacity: 0, y: -200 }}
-              animate={{
-                opacity: notifKeyframes.opacity,
-                y: notifKeyframes.y,
-              }}
-              transition={{ duration: duration + 3 }}
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={{
+              opacity: notifKeyframes.opacity,
+              y: notifKeyframes.y,
+            }}
+            transition={{ duration: duration + 3 }}
+          >
+            <Alert
+              className={`w-[80%] mx-auto alert ${
+                request === null ? 'block' : 'hidden'
+              }`}
             >
-              <Alert
-                className={`w-[80%] mx-auto alert ${
-                  request === null ? 'block' : 'hidden'
-                }`}
-              >
-                <AlertTitle className='flex items-center gap-2 font-bold'>
-                  <AlertCircle color='#000000' />
-                  Alert!
-                </AlertTitle>
-                <AlertDescription>You got 1 notification.</AlertDescription>
-              </Alert>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: -200 }}
-              animate={request === true ? 'after' : 'before'}
-              transition={{ duration: duration + 4 }}
-              variants={notifVariants}
+              <AlertTitle className='flex items-center gap-2 font-bold'>
+                <AlertCircle color='#000000' />
+                Alert!
+              </AlertTitle>
+              <AlertDescription>You got 1 notification.</AlertDescription>
+            </Alert>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={request === true ? 'after' : 'before'}
+            transition={{ duration: duration + 4 }}
+            variants={notifVariants}
+          >
+            <Alert
+              className={`w-[80%] mx-auto alert ${
+                request === true ? 'block' : 'hidden'
+              }`}
             >
-              <Alert
-                className={`w-[80%] mx-auto alert ${
-                  request === true ? 'block' : 'hidden'
-                }`}
-              >
-                <AlertTitle className='flex items-center gap-2 font-bold'>
-                  <div className='flex items-center gap-2'>
-                    <CheckCircle2 /> {greeting}
-                  </div>
-                </AlertTitle>
-                <AlertDescription>
-                  Looking forward to getting to know you!
-                </AlertDescription>
-              </Alert>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: -200 }}
-              animate={request === false ? 'after' : 'before'}
-              transition={{ duration: duration + 4 }}
-              variants={notifVariants}
+              <AlertTitle className='flex items-center gap-2 font-bold'>
+                <div className='flex items-center gap-2'>
+                  <CheckCircle2 /> {greeting}
+                </div>
+              </AlertTitle>
+              <AlertDescription>
+                Looking forward to getting to know you!
+              </AlertDescription>
+            </Alert>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -200 }}
+            animate={request === false ? 'after' : 'before'}
+            transition={{ duration: duration + 4 }}
+            variants={notifVariants}
+          >
+            <Alert
+              className={`w-[80%] mx-auto alert ${
+                request === false ? 'block' : 'hidden'
+              }`}
             >
-              <Alert
-                className={`w-[80%] mx-auto alert ${
-                  request === false ? 'block' : 'hidden'
-                }`}
-              >
-                <AlertTitle className='flex items-center gap-2 font-bold'>
-                  <div className='flex items-center gap-2'>
-                    <XCircle /> {greeting}
-                  </div>
-                </AlertTitle>
-                <AlertDescription>
-                  Have my contact information anyways!
-                </AlertDescription>
-              </Alert>
-            </motion.div>
-          </AnimatePresence>
+              <AlertTitle className='flex items-center gap-2 font-bold'>
+                <div className='flex items-center gap-2'>
+                  <XCircle /> {greeting}
+                </div>
+              </AlertTitle>
+              <AlertDescription>
+                Have my contact information anyways!
+              </AlertDescription>
+            </Alert>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={request === null ? 'before' : 'after'}
