@@ -70,11 +70,11 @@ export default function AboutPage() {
               interest into this field began with one sole question: <br />
               <br />
               <span className='text-span font-bold text-lg'>
-                &quot;What if I made this accessible to anyone for enjoy?&quot;
+                &quot;What if I made this accessible to anyone to enjoy?&quot;
               </span>
             </p>
             <p className='mb-4'>
-              Fast-forward today after several twists and turns in my life,
+              Fast-forward to today, after several twists and turns in my life,
               front-end development is simply my calling to scratch that high
               school itch. Despite the challenges and continuous learning curve
               in this field, I would like to{' '}
@@ -82,8 +82,8 @@ export default function AboutPage() {
               myself by creating websites accessible to all.
             </p>
             <p>
-              Outside of my development life, nothing beats a productive day
-              than sitting down and enjoying a good video game.{' '}
+              Outside my development life, nothing beats a productive day than
+              sitting down and enjoying a good video game.{' '}
               <a
                 href='https://www.ea.com/games/apex-legends'
                 target='_blank'
