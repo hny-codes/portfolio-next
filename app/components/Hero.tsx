@@ -12,7 +12,7 @@ export default function Hero() {
   const [contactHover, setContactHover] = useState(false);
 
   return (
-    <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 sm:my-16'>
+    <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16'>
       <div className=''>
         <h1 className='text-clamp'>
           <span className='text-span'>H</span>NY-
