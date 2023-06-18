@@ -45,6 +45,7 @@ Here are the libraries I used to build this portfolio. Outside basic React with 
 - [Framer Motion Animation Library](https://www.framer.com/motion/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Lucide-Icons](https://lucide.dev/)
+- [Lottie React](https://lottiereact.com/)
 
 ## My Process
 
@@ -92,3 +93,4 @@ Outside of the documentation of the libraries, here are other resources I have u
 - [Dribble](https://dribbble.com/) for research
 - [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction) to edit shadcn components
 - [Skill Icons](https://skillicons.dev/) for SVG icons
+- [Haikei](https://haikei.app/) for the SVG background
