@@ -2,7 +2,7 @@ import './globals.css';
 import { Montserrat } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
+import Image from 'next/image';
 
 
 const montserrat = Montserrat({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${montserrat.className}`}>
-      <body className={`relative`}>
+      <body className={`relative bg-[url('/images/bg.svg')] bg-no-repeat bg-cover h-screen bg-fixed`}>
         <Navbar />
         {children}
         <Footer />
