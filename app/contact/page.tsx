@@ -83,7 +83,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className='text-white'>
+    <main className='text-white sm:p-10 mb-14'>
       <div>
         <section className='relative'>
           <motion.div
