@@ -62,7 +62,7 @@ export default function Navbar() {
           <Sheet>
             <SheetTrigger asChild>
               <div className=''>
-                <Button variant='ghost'>
+                <Button variant='ghost' aria-label='Menu Button'>
                   <Menu />
                 </Button>
               </div>
