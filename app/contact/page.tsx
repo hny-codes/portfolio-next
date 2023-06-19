@@ -154,7 +154,7 @@ export default function ContactPage() {
             transition={{ duration, delay: duration }}
             variants={cardVariants}
           >
-            <Card className='w-[60%] mx-auto my-8 max-w-lg -z-10'>
+            <Card className='w-[60%] mx-auto my-8 max-w-lg -z-10 border-l-[var(--clr-secondary-01)] border-l-8'>
               <CardHeader>
                 <CardTitle className='flex items-center gap-4 font-bold'>
                   <Avatar className=''>
@@ -196,17 +196,16 @@ export default function ContactPage() {
             variants={contactVariants}
           >
             <Card
-              className={`w-[80%] mx-auto max-w-2xl ${
-                request === null ? 'hidden' : 'block'
-              }`}
+              className={`w-[80%] mx-auto max-w-2xl border-l-[var(--clr-secondary-01)] border-l-8 
+              ${request === null ? 'hidden' : 'block'}`}
             >
               <CardHeader className='flex items-center'>
-                <CardTitle>Get in contact with me!</CardTitle>
+                <CardTitle>Let&apos;s Party Up!</CardTitle>
               </CardHeader>
               <CardContent className=''>
                 <div className=''>
                   <div className='flex flex-col justify-center items-center'>
-                    <h3 className='font-bold'>Email me!</h3>
+                    <h3 className='font-bold'>My Email:</h3>
                     <p>hny-codes@protonmail.com</p>
                   </div>
                   <div className='flex justify-evenly mt-8 font-bold'>
