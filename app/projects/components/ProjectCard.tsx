@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { ArrowUpRight } from 'lucide-react';
 
 type Props = {
   link: string;
