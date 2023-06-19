@@ -35,9 +35,12 @@ export default function Navbar() {
   return (
     <nav className=''>
       <div className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
-        <Link href={'/'}>
+        <Link href={'/'} aria-label='Link back to homepage'>
           <Avatar>
-            <AvatarImage src='https://avatars.githubusercontent.com/u/104471437?v=4' />
+            <AvatarImage
+              src='https://avatars.githubusercontent.com/u/104471437?v=4'
+              alt='avatar logo'
+            />
             <AvatarFallback>HN</AvatarFallback>
           </Avatar>
         </Link>
@@ -59,7 +62,7 @@ export default function Navbar() {
           <Sheet>
             <SheetTrigger asChild>
               <div className=''>
-                <Button variant='ghost'>
+                <Button variant='ghost' aria-label='Menu Button'>
                   <Menu />
                 </Button>
               </div>
