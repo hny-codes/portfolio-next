@@ -313,7 +313,7 @@ export function VSCodeIcon() {
         <Tooltip>
           <TooltipTrigger>
             <Image
-              src={'/images/icons/VSCODE-Dark.svg'}
+              src={'/images/icons/VSCode-Dark.svg'}
               alt='VSCode icon'
               width={50}
               height={50}
