@@ -12,14 +12,14 @@ export default function Hero() {
 
   return (
     <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16'>
-      <div className=''>
+      <section className='animate-enter'>
         <h1 className='text-clamp'>
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
         </h1>
         <ControllerAnim />
-      </div>
-      <div className='w-[85%] mx-auto text-lg sm:text-left'>
+      </section>
+      <section className='w-[85%] mx-auto text-lg sm:text-left animate-delay-enter'>
         <h2 className='mb-4 p-2'>
           <span className='text-span'>Front-end developer</span> at day, gamer
           at night
@@ -61,7 +61,7 @@ export default function Hero() {
             </Link>
           </Button>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

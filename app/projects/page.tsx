@@ -5,18 +5,20 @@ export default function page() {
     <main className='text-white mb-12 '>
       <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto'>
         <section>
-          <h1 className='font-bold text-3xl mb-2'>Projects</h1>
-          <h2 className='mb-8'>
-            Take a look at my work! All projects are available on my{' '}
-            <a
-              href='https://github.com/hny-codes'
-              target='_blank'
-              className='underline link-hover'
-            >
-              Github
-            </a>
-            .
-          </h2>
+          <div className='animate-enter'>
+            <h1 className='font-bold text-3xl mb-2'>Projects</h1>
+            <h2 className='mb-8'>
+              Take a look at my work! All projects are available on my{' '}
+              <a
+                href='https://github.com/hny-codes'
+                target='_blank'
+                className='underline link-hover'
+              >
+                Github
+              </a>
+              .
+            </h2>
+          </div>
           <div className='flex flex-col gap-4 justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 '>
             <ProjectCard
               link='https://github.com/hny-codes/news-homepage-solution'

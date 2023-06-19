@@ -18,7 +18,11 @@ type Props = {
 
 export default function ProjectCard({ link, title, content, src, alt }: Props) {
   return (
-    <a href={link} target='_blank' className='project-hover'>
+    <a
+      href={link}
+      target='_blank'
+      className='project-hover animate-delay-enter'
+    >
       <Card className='sm:max-w-[450px] h-full'>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
