@@ -2,8 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import Lottie from 'lottie-react';
-import ControllerAnim from '../assets/controller.json';
+import ControllerAnim from './ControllerAnim';
 import { MoveRight, Mail } from 'lucide-react';
 import { useState } from 'react';
 
@@ -18,9 +17,7 @@ export default function Hero() {
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
         </h1>
-        <div className='w-[30%] sm:w-[40%] mx-auto'>
-          <Lottie animationData={ControllerAnim} />
-        </div>
+        <ControllerAnim />
       </div>
       <div className='w-[85%] mx-auto text-lg sm:text-left'>
         <h2 className='mb-4 p-2'>
