@@ -212,7 +212,7 @@ export default function ContactPage() {
                     <a
                       href='https://github.com/hny-codes'
                       target='_blank'
-                      className='flex flex-col items-center link-hover'
+                      className='flex flex-col items-center link-hover hover:rotate-12 hover:transition'
                     >
                       <Github />
                       <span className='text-black'>Github</span>
@@ -220,7 +220,7 @@ export default function ContactPage() {
                     <a
                       href='#'
                       target='_blank'
-                      className='flex flex-col items-center link-hover'
+                      className='flex flex-col items-center link-hover hover:rotate-12 hover:transition'
                     >
                       <Linkedin />
                       <span className='text-black'>LinkedIn</span>
