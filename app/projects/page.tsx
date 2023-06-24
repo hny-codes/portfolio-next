@@ -22,6 +22,7 @@ export default function page() {
           <div className='flex flex-col gap-4 justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 '>
             <ProjectCard
               link='https://github.com/hny-codes/news-homepage-solution'
+              site='https://github.com/hny-codes/news-homepage-solution'
               title='News Homepage'
               content='A project created to replicate a news webpage with a given design guide.'
               src='/images/projects/news-homepage.png'
@@ -29,10 +30,19 @@ export default function page() {
             />
             <ProjectCard
               link='https://github.com/hny-codes/summary-component-solution'
+              site='https://hny-codes.github.io/summary-component-solution/'
               title='Summary Component'
               content='A project to replicate a component displaying summary statistics with a given design guide'
               src='/images/projects/summary-component.png'
               alt='summary component image'
+            />
+            <ProjectCard
+              link='https://github.com/hny-codes/IP-Address-Tracker'
+              site='https://ip-address-tracker-hny-codes.vercel.app/'
+              title='IP Address Tracker'
+              content='A web app that allow users to enter an IP address and retrieve the location and information of the IP address'
+              src='/images/projects/ip-tracker.png'
+              alt='ip address image'
             />
           </div>
         </section>
