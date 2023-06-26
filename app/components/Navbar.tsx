@@ -14,6 +14,7 @@ import { Button } from '@/components/ui/button';
 import { Menu, Github, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+// Framer motion values
 const navVariants = {
   hidden: { opacity: 0, y: -50 },
   show: {
