@@ -33,8 +33,8 @@ export default function ProjectCard({
       <Card className='h-full sm:grid sm:grid-rows-1'>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
-          <Image src={src} alt={alt} width={500} height={700} />
           <SkillBadge skills={skills} />
+          <Image src={src} alt={alt} width={500} height={700} />
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-end'>
