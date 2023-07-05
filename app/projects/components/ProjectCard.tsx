@@ -7,6 +7,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { ExternalLink, Github } from 'lucide-react';
+import SkillBadge from './SkillBadge';
 
 type Props = {
   link: string;
@@ -15,6 +16,7 @@ type Props = {
   content: string;
   src: string;
   alt: string;
+  skills: string[];
 };
 
 export default function ProjectCard({
@@ -24,6 +26,7 @@ export default function ProjectCard({
   content,
   src,
   alt,
+  skills
 }: Props) {
   return (
     <div className='project-hover animate-delay-enter sm:max-w-[400px]'>
@@ -31,6 +34,7 @@ export default function ProjectCard({
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <Image src={src} alt={alt} width={500} height={700} />
+          <SkillBadge skills={skills} />
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-end'>

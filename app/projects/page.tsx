@@ -21,20 +21,13 @@ export default function page() {
           </div>
           <div className='flex flex-col gap-4 justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 '>
             <ProjectCard
-              link='https://github.com/hny-codes/news-homepage-solution'
-              site='https://github.com/hny-codes/news-homepage-solution'
-              title='News Homepage'
-              content='A project created to replicate a news webpage with a given design guide.'
-              src='/images/projects/news-homepage.png'
-              alt='image alt'
-            />
-            <ProjectCard
-              link='https://github.com/hny-codes/summary-component-solution'
-              site='https://hny-codes.github.io/summary-component-solution/'
-              title='Summary Component'
-              content='A project to replicate a component displaying summary statistics with a given design guide'
-              src='/images/projects/summary-component.png'
-              alt='summary component image'
+              link='https://github.com/hny-codes/hny-blogs'
+              site='https://hny-blogs.vercel.app/'
+              title='Hny-Blogs'
+              content='A personal blog where I talk about just about my developer experiences'
+              src='/images/projects/blog.png'
+              alt='blog image'
+              skills={['Astro', 'Contentful', 'Tailwind', 'React', 'Typescript']}
             />
             <ProjectCard
               link='https://github.com/hny-codes/IP-Address-Tracker'
@@ -43,6 +36,25 @@ export default function page() {
               content='A web app that allow users to enter an IP address and retrieve the location and information of the IP address'
               src='/images/projects/ip-tracker.png'
               alt='ip address image'
+              skills={['Next', 'Tailwind', 'Typescript']}
+            />
+            <ProjectCard
+              link='https://github.com/hny-codes/news-homepage-solution'
+              site='https://github.com/hny-codes/news-homepage-solution'
+              title='News Homepage'
+              content='A project created to replicate a news webpage with a given design guide.'
+              src='/images/projects/news-homepage.png'
+              alt='image alt'
+              skills={['Astro', 'VanillaJs', 'CSS']}
+            />
+            <ProjectCard
+              link='https://github.com/hny-codes/summary-component-solution'
+              site='https://hny-codes.github.io/summary-component-solution/'
+              title='Summary Component'
+              content='A project to replicate a component displaying summary statistics with a given design guide'
+              src='/images/projects/summary-component.png'
+              alt='summary component image'
+              skills={['Vite', 'React', 'Typescript', 'CSS']}
             />
           </div>
         </section>
