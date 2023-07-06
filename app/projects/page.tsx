@@ -42,7 +42,7 @@ export default function page() {
               link='https://github.com/hny-codes/news-homepage-solution'
               site='https://github.com/hny-codes/news-homepage-solution'
               title='News Homepage'
-              content='A project created to replicate a news webpage with a given design guide.'
+              content='A project created to replicate a news webpage with a given design guide'
               src='/images/projects/news-homepage.png'
               alt='image alt'
               skills={['Astro', 'VanillaJs', 'CSS']}
