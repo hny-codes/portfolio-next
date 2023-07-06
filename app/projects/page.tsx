@@ -24,7 +24,7 @@ export default function page() {
               link='https://github.com/hny-codes/hny-blogs'
               site='https://hny-blogs.vercel.app/'
               title='Hny-Blogs'
-              content='A personal blog where I talk about just about my developer experiences, built with Contentful CMS as the backend'
+              content='A personal blog where I talk about my developer experiences, built with Contentful CMS as the backend'
               src='/images/projects/blog.png'
               alt='blog image'
               skills={['Astro', 'Contentful', 'Tailwind', 'React', 'Typescript']}
