@@ -11,7 +11,7 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Github, Linkedin } from 'lucide-react';
+import { Menu, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 // Framer motion values
@@ -58,6 +58,16 @@ export default function Navbar() {
           <Link href={'/contact'} className='link-hover'>
             Contact
           </Link>
+          <a
+            href='https://hny-blogs.vercel.app/'
+            target='_blank'
+            className='link-hover'
+          >
+            <div className='flex place-items-center gap-1.5'>
+              <h1>Blog</h1>
+              <ExternalLink />
+            </div>
+          </a>
         </div>
         <div className='sm:hidden'>
           <Sheet>
@@ -101,6 +111,18 @@ export default function Navbar() {
                     >
                       <SheetClose className='text-3xl p-4'>Contact</SheetClose>
                     </Link>
+                  </motion.div>
+                  <motion.div variants={item} className='w-fit mx-auto'>
+                    <a
+                      href={'https://hny-blogs.vercel.app/'}
+                      target='_blank'
+                      className='link-hover'
+                    >
+                      <div className='flex place-items-center p-4'>
+                        <h1 className='text-3xl mr-2 ml-6'>Blog</h1>
+                        <ExternalLink />
+                      </div>
+                    </a>
                   </motion.div>
                 </motion.div>
               </SheetHeader>
