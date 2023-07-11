@@ -86,29 +86,23 @@ export default function Navbar() {
                   variants={navVariants}
                   className='flex flex-col'
                 >
-                  <motion.div variants={item}>
-                    <Link href={'/'} className='link-hover w-fit mx-auto'>
+                  <motion.div variants={item} className='w-fit mx-auto'>
+                    <Link href={'/'} className='link-hover'>
                       <SheetClose className='text-3xl p-4'>Home</SheetClose>
                     </Link>
                   </motion.div>
-                  <motion.div variants={item}>
-                    <Link href={'/about'} className='link-hover w-fit mx-auto'>
+                  <motion.div variants={item} className='w-fit mx-auto'>
+                    <Link href={'/about'} className='link-hover'>
                       <SheetClose className='text-3xl p-4'>About</SheetClose>
                     </Link>
                   </motion.div>
-                  <motion.div variants={item}>
-                    <Link
-                      href={'/projects'}
-                      className='link-hover w-fit mx-auto'
-                    >
+                  <motion.div variants={item} className='w-fit mx-auto'>
+                    <Link href={'/projects'} className='link-hover'>
                       <SheetClose className='text-3xl p-4'>Projects</SheetClose>
                     </Link>
                   </motion.div>
-                  <motion.div variants={item}>
-                    <Link
-                      href={'/contact'}
-                      className='link-hover w-fit mx-auto'
-                    >
+                  <motion.div variants={item} className='w-fit mx-auto'>
+                    <Link href={'/contact'} className='link-hover'>
                       <SheetClose className='text-3xl p-4'>Contact</SheetClose>
                     </Link>
                   </motion.div>
