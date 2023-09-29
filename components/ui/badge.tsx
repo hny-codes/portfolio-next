@@ -28,6 +28,8 @@ const badgeVariants = cva(
         vanillaJs:
           'border-transparent shadow bg-[#fcc419] text-secondary-foreground',
         vite: 'border-transparent shadow bg-[#5f3dc4] text-primary-foreground',
+        cypress:
+          'border-transparent shadow bg-[#00595F] text-primary-foreground',
       },
     },
     defaultVariants: {

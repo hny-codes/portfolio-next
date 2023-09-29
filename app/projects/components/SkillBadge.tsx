@@ -61,6 +61,12 @@ const createSkillList = (skill: string, idx: number) => {
           Vite
         </Badge>
       );
+    case 'Cypress':
+      return (
+        <Badge variant={'cypress'} key={idx}>
+          Cypress
+        </Badge>
+      )
   }
 };
 
