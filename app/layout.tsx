@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className={`${montserrat.className}`}>
+    <html lang='en' className={`${montserrat.className} scroll-smooth`}>
       <body
         className={`relative bg-[url('/images/bg.svg')] bg-no-repeat bg-cover h-screen bg-fixed`}
       >
