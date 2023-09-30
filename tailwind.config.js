@@ -70,7 +70,7 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
-        'enter': {
+        enter: {
           from: { opacity: 0, transform: 'translateY(100px)' },
           to: { opacity: 1, transform: 'translateY(0)' },
         },
@@ -78,12 +78,22 @@ module.exports = {
           '0%, 50%': { opacity: 0, transform: 'translateY(100px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
         },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.4s ease-out',
-        'enter': 'enter 400ms ease-in',
-        'delay-enter': 'delay-enter 800ms ease-in'
+        enter: 'enter 400ms ease-in',
+        'delay-enter': 'delay-enter 800ms ease-in',
+        fadeIn: 'fadeIn 0.5s ease-in forwards',
+        fadeOut: 'fadeOut 0.5s ease-out forwards',
       },
     },
   },
