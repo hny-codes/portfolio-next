@@ -93,13 +93,19 @@
   }
 }
 
+@layer components {
+  .project-page {
+    @apply [&>*]:mb-8 [&>p>strong]:text-[--clr-secondary-01]  leading-relaxed [&>p>em]:text-[--clr-secondary-01];
+  }
+}
+
 @layer utilities {
   .text-span {
     @apply text-[var(--clr-secondary-01)];
   }
 
   .link-hover {
-    @apply hover:text-[var(--clr-secondary-01)] transition-all
+    @apply hover:text-[var(--clr-secondary-01)] transition-all;
   }
 
   .alert {
@@ -107,10 +113,10 @@
   }
 
   .btn-select {
-    @apply bg-[var(--clr-secondary-01)] text-accent-foreground
+    @apply bg-[var(--clr-secondary-01)] text-accent-foreground;
   }
 
   .project-hover {
-    @apply border-4 border-transparent hover:border-[var(--clr-secondary-01)] rounded-xl transition hover:-translate-y-1
+    @apply border-4 border-transparent hover:border-[var(--clr-secondary-01)] rounded-xl transition hover:-translate-y-1;
   }
 }
