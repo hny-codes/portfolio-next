@@ -30,15 +30,18 @@ export default function ProjectLayout({
   if (!project) throw new Error(`Project not found: ${params.slug}`);
 
   return (
-    <article className='text-white' id='project-article'>
-      <div className='relative py-24 group rounded-lg text-center animate-enter'>
+    <article
+      className='text-white sm:grid sm:grid-cols-2 sm:max-w-[var(--max-width)] sm:mx-auto'
+      id='project-article'
+    >
+      <div className='relative py-24 group rounded-lg text-center animate-enter sm:max-h-80 sm:mt-4 sm:sticky sm:top-20'>
         <Image
           src={project.src}
           alt={project.alt}
           fill={true}
-          className='object-cover overflow-hidden brightness-50 group-hover:brightness-[0.6] transition group-hover:object-[110%] '
+          className='object-cover overflow-hidden brightness-50 group-hover:brightness-[0.6] transition group-hover:object-[110%] sm:rounded-lg'
         />
-        <h1 className='absolute text-3xl left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeIn group-hover:animate-fadeOut'>
+        <h1 className='absolute text-3xl sm:text-4xl left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeIn group-hover:animate-fadeOut'>
           {project.title}
         </h1>
         <p className='absolute w-full p-8 left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeOut group-hover:animate-fadeIn'>
