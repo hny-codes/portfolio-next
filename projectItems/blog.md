@@ -15,7 +15,9 @@ skills:
   -
 ---
 
-The purpose of this project is to create a personal blog while trying out Contentful CMS.
+As a developer, having a personal blog is definitely something I wanted to make since not only would it allow me to **improve my writing skills**, but it would also **reinforce** the topics I learned by talking about! 
+
+At the same time, I also wanted to try incorporating something new to my project as this is the perfect opportunity to branch out and try something new — a CMS! 
 
 At the time of this project, _I am not too well-versed when it comes to using CMS'es_ and although I have heard of multiple ones such as Shopify, Wordpress, and Drupal, I wanted to practice my front-end skills utilizing one as the back-end (headless CMS).
 
