@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import {
   Card,
@@ -6,10 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, Github, Pencil } from 'lucide-react';
 import SkillBadge from './SkillBadge';
 
 type Props = {
+  url: string;
   link: string;
   site: string;
   title: string;
@@ -20,13 +22,14 @@ type Props = {
 };
 
 export default function ProjectCard({
+  url,
   link,
   site,
   title,
   content,
   src,
   alt,
-  skills
+  skills,
 }: Props) {
   return (
     <div className='project-hover animate-delay-enter sm:max-w-[400px]'>
@@ -37,21 +40,28 @@ export default function ProjectCard({
           <Image src={src} alt={alt} width={500} height={700} />
         </CardHeader>
         <CardContent>{content}</CardContent>
-        <CardFooter className='flex gap-5 justify-end'>
-          <a
-            href={site}
-            target='_blank'
-            className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
-          >
-            <ExternalLink />
-          </a>
-          <a
-            href={link}
-            target='_blank'
-            className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
-          >
-            <Github />
-          </a>
+        <CardFooter className='flex gap-5 justify-between'>
+          <div className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'>
+            <Link href={url}>
+              <Pencil />
+            </Link>
+          </div>
+          <div className='flex gap-6'>
+            <a
+              href={site}
+              target='_blank'
+              className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
+            >
+              <ExternalLink />
+            </a>
+            <a
+              href={link}
+              target='_blank'
+              className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
+            >
+              <Github />
+            </a>
+          </div>
         </CardFooter>
       </Card>
     </div>
