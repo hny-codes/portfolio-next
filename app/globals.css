@@ -95,7 +95,8 @@
 
 @layer components {
   .project-page {
-    @apply [&>*]:mb-8 [&>p>strong]:text-[--clr-secondary-01]  leading-relaxed [&>p>em]:text-[--clr-secondary-01];
+    @apply [&>*]:mb-8 [&>p>strong]:text-[--clr-secondary-01]  leading-relaxed [&>p>em]:text-[--clr-secondary-01] [&>p>a]:underline hover:[&>p>a]:text-[--clr-secondary-01] hover:[&>p>a]:transition [&>ul]:list-disc [&>ul]:pl-4
+    [&>h2]:text-2xl [&>h2]:font-bold [&>h2]:pt-4 [&>ul>li>a]:underline hover:[&>ul>li>a]:text-[--clr-secondary-01] hover:[&>ul>li>a]:transition;
   }
 }
 
