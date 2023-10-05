@@ -23,7 +23,7 @@ This is the **first** project done utilizing the new **app directory** feature i
 
 In addition, the web application will also create a interactive map with a marker showing the physical location of the IP address.
 
-This project is the solution to the [Frontend Mentor challenge](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
+This project is the solution to one of the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 
 ## The Challenge
 

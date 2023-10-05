@@ -16,6 +16,8 @@ This is a static landing page built using Vanilla JS and CSS with a mobile-first
 
 This project is built using [Astro](https://astro.build/), a web framework that is perfect for building static content. Besides Astro, there are **no other frameworks nor libraries** used for this project.
 
+This project is the solution to one of the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl).
+
 ## The Challenge
 
 Users should be able to:
