@@ -20,7 +20,7 @@ This project is the solution to one of the [Frontend Mentor challenges](https://
 
 ## The Challenge
 
-Users should be able to:
+Users **should** be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
