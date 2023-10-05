@@ -32,7 +32,7 @@ export default function ProjectLayout({
 
   return (
     <article
-      className='text-white sm:grid sm:grid-cols-2 sm:max-w-[var(--max-width)] sm:mx-auto'
+      className='text-white sm:grid sm:grid-cols-2 gap-4 sm:max-w-[var(--max-width)] sm:mx-auto'
       id='project-article'
     >
       <div className='relative py-24 group rounded-lg text-center animate-enter sm:max-h-80 sm:mt-4 sm:sticky sm:top-20'>
@@ -68,7 +68,7 @@ export default function ProjectLayout({
           <SkillBadge skills={project.skills} />
         </div>
       </div>
-      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto mt-4 sm:mt-0 mb-20 animate-delay-enter'>
+      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto mt-10 sm:mt-0 mb-10 sm:mb-16 animate-delay-enter bg-gray-100/10 sm:rounded-3xl pt-4 pb-2 sm:pb-0'>
         <div className='border-b-2 pb-4 sm:hidden'>
           <SkillBadge skills={project.skills} />
         </div>
