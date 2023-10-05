@@ -63,13 +63,16 @@ export default function ProjectLayout({
             <Github />
           </a>
         </div>
+        <div className='hidden sm:block absolute sm:-bottom-20 xl:-bottom-12'>
+          <SkillBadge skills={project.skills} />
+        </div>
       </div>
-      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto mt-4 mb-20 animate-delay-enter'>
-        <div className='border-b-2 pb-4'>
+      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto mt-4 sm:mt-0 mb-20 animate-delay-enter'>
+        <div className='border-b-2 pb-4 sm:hidden'>
           <SkillBadge skills={project.skills} />
         </div>
         <div
-          className='mt-4 project-page'
+          className='mt-4 project-page sm:border-t-2 sm:pt-4'
           dangerouslySetInnerHTML={{ __html: project.body.html }}
         />
         <div className='flex justify-between my-10 border-t-2 pt-4'>
