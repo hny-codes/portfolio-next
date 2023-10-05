@@ -37,7 +37,7 @@ export default function ProjectCard({
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <SkillBadge skills={skills} />
-          <Image src={src} alt={alt} width={500} height={700} />
+          <Image className='flex-grow object-contain' src={src} alt={alt} width={500} height={700} />
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-between'>
