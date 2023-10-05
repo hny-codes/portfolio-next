@@ -1,8 +1,9 @@
 import { allProjects } from 'contentlayer/generated';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ExternalLink, Github, Milestone, ArrowUpFromLine } from 'lucide-react';
+import { ExternalLink, Github, Milestone } from 'lucide-react';
 import SkillBadge from '../components/SkillBadge';
+import TopAnchor from '../components/TopAnchor';
 
 export async function generateStaticParams() {
   return allProjects.map((project) => ({
@@ -39,7 +40,7 @@ export default function ProjectLayout({
           src={project.src}
           alt={project.alt}
           fill={true}
-          className='object-cover overflow-hidden brightness-50 group-hover:brightness-[0.6] transition group-hover:object-[110%] sm:rounded-lg'
+          className='object-cover overflow-hidden brightness-50 group-hover:brightness-[0.6] transition  sm:rounded-lg'
         />
         <h1 className='absolute text-3xl sm:text-4xl left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeIn group-hover:animate-fadeOut'>
           {project.title}
@@ -83,12 +84,7 @@ export default function ProjectLayout({
             <Milestone />
             Projects
           </Link>
-          <a
-            href='#'
-            className='flex gap-2 hover:transition hover:text-[var(--clr-secondary-01)]'
-          >
-            <ArrowUpFromLine /> Top
-          </a>
+          <TopAnchor />
         </div>
       </div>
     </article>
