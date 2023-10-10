@@ -11,15 +11,15 @@ export default function Hero() {
   const [contactHover, setContactHover] = useState(false);
 
   return (
-    <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16'>
-      <section className='animate-enter'>
+    <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16 relative'>
+      <section className='animate-enter font-bold'>
         <h1 className='text-clamp'>
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
         </h1>
         <ControllerAnim />
       </section>
-      <section className='w-[85%] mx-auto text-lg sm:text-left animate-delay-enter'>
+      <section className='w-[85%] mx-auto text-lg sm:text-left animate-delay-enter font-bold'>
         <h2 className='mb-4 p-2'>
           <span className='text-span'>Front-end developer</span> at day, gamer
           at night
