@@ -23,9 +23,9 @@ import {
 
 export default function AboutPage() {
   return (
-    <main className='text-white mb-12 '>
-      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto sm:flex sm:gap-8'>
-        <section className='mb-20 sm:w-[80ch] animate-enter'>
+    <main className='text-white mb-6 sm:mb-0'>
+      <div className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto sm:flex sm:gap-8 bg-gray-100/10 sm:rounded-3xl pt-8 pb-2'>
+        <section className='mb-20 sm:mb-10 sm:w-[80ch] animate-enter'>
           <article>
             <header className='mb-8'>
               <h1 className='font-bold text-3xl mb-2'>Character Profile</h1>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             </p>
           </article>
         </section>
-        <section className='mb-32 sm:mb-10 sm:flex sm:gap-8 sm:justify-around'>
+        <section className='mb-16 sm:mb-10 sm:flex sm:gap-8 sm:justify-around'>
           <article className='mb-20 animate-delay-enter'>
             <header className='mb-4'>
               <h1 className='font-bold text-3xl mb-2'>My Skills Tree</h1>
