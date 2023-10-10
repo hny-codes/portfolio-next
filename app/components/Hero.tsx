@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ControllerAnim from './ControllerAnim';
 import { MoveRight, Mail } from 'lucide-react';
 import { useState } from 'react';
+import SkillRain from './SkillRain';
 
 export default function Hero() {
   const [aboutHover, setAboutHover] = useState(false);
@@ -62,6 +63,7 @@ export default function Hero() {
           </Button>
         </div>
       </section>
+      <SkillRain />
     </div>
   );
 }
