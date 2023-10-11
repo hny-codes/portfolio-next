@@ -12,6 +12,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hny-codes.com'),
   title: 'Hny-codes | Portfolio',
   description:
     'Front-end Developer | A portfolio built with Next.js and Tailwind',
