@@ -9,8 +9,6 @@ type Prop = {
 
 // Factory function to generate different logo components
 const LogoFactory = ({ image }: Partial<Prop>) => {
-  console.log('LOG', image);
-
   switch (image) {
     case 'Astro':
       return (
