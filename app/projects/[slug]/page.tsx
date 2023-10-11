@@ -1,6 +1,7 @@
 import { allProjects } from 'contentlayer/generated';
 import Image from 'next/image';
 import Link from 'next/link';
+import { ResolvingMetadata } from 'next/types';
 import { ExternalLink, Github, Milestone } from 'lucide-react';
 import SkillBadge from '../components/SkillBadge';
 import TopAnchor from '../components/TopAnchor';
@@ -17,7 +18,17 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
   );
 
   if (!project) throw new Error(`Project not found: ${params.slug}`);
-  return { title: project.title };
+  return {
+    title: project.title,
+    description: project.content,
+    openGraph: {
+      type: 'article',
+      url: params.slug,
+      siteName: project.title,
+      description: project.content,
+      images: '/images/profile.jpg',
+    },
+  };
 };
 
 export default function ProjectLayout({

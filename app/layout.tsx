@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { Metadata } from 'next';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -10,11 +11,21 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 });
 
-export const metadata = {
-  title: 'Hny-codes',
-  description: 'A portfolio made by hny-codes, built with Next',
+export const metadata: Metadata = {
+  title: 'Hny-codes | Portfolio',
+  description:
+    'Front-end Developer | A portfolio built with Next.js and Tailwind',
   icons: {
     icon: '/images/favicon.ico',
+  },
+  openGraph: {
+    type: 'website',
+    url: 'https://hny-codes.com',
+    siteName: 'Hny-codes | Portfolio',
+    title: 'Hny-codes',
+    description:
+      'Front-end Developer | A portfolio built with Next.js and Tailwind',
+    images: '/images/profile.jpg',
   },
 };
 
