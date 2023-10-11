@@ -6,6 +6,8 @@ import ControllerAnim from './ControllerAnim';
 import { MoveRight, Mail } from 'lucide-react';
 import { useState } from 'react';
 import SkillRain from './SkillRain';
+import { motion } from 'framer-motion';
+import { pageVariant } from '@/lib/framerAnim';
 
 export default function Hero() {
   const [aboutHover, setAboutHover] = useState(false);
@@ -13,14 +15,24 @@ export default function Hero() {
 
   return (
     <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16 relative'>
-      <section className='animate-enter font-bold'>
+      <motion.section
+        variants={pageVariant}
+        initial='pageInitial'
+        animate='pageEnter'
+        className='font-bold'
+      >
         <h1 className='text-clamp'>
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
         </h1>
         <ControllerAnim />
-      </section>
-      <section className='w-[85%] mx-auto text-lg sm:text-left animate-delay-enter font-bold'>
+      </motion.section>
+      <motion.section
+        variants={pageVariant}
+        initial='pageInitial'
+        animate='pageDelayEnter'
+        className='w-[85%] mx-auto text-lg sm:text-left font-bold'
+      >
         <h2 className='mb-4 p-2'>
           <span className='text-span'>Front-end developer</span> at day, gamer
           at night
@@ -62,7 +74,7 @@ export default function Hero() {
             </Link>
           </Button>
         </div>
-      </section>
+      </motion.section>
       <SkillRain />
     </div>
   );

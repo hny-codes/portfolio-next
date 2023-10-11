@@ -119,6 +119,6 @@
   }
 
   .project-hover {
-    @apply border-4 border-transparent hover:border-[var(--clr-secondary-01)] rounded-xl transition hover:-translate-y-1;
+    @apply border-4 border-transparent hover:border-[var(--clr-secondary-01)] rounded-xl hover:-translate-y-1;
   }
 }
