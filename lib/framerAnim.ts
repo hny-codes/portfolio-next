@@ -74,7 +74,6 @@ export const friendRequestVariant: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      contactDuration,
       type: 'spring',
     },
   },
@@ -87,7 +86,6 @@ export const contactVariants: Variants = {
     opacity: 1,
     y: 0,
     transition: {
-      contactDuration,
       delay: contactDuration,
       type: 'spring',
     },
