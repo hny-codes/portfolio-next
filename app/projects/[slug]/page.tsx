@@ -1,7 +1,7 @@
 import { allProjects } from 'contentlayer/generated';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ResolvingMetadata } from 'next/types';
+import { notFound } from 'next/navigation';
 import { ExternalLink, Github, Milestone } from 'lucide-react';
 import SkillBadge from '../components/SkillBadge';
 import TopAnchor from '../components/TopAnchor';
@@ -17,7 +17,10 @@ export const generateMetadata = ({ params }: { params: { slug: string } }) => {
     (projectItem) => projectItem._raw.flattenedPath === params.slug
   );
 
-  if (!project) throw new Error(`Project not found: ${params.slug}`);
+  if (!project) {
+    notFound();
+  }
+
   return {
     title: project.title,
     description: project.content,
