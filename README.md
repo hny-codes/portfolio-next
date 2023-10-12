@@ -55,7 +55,19 @@ Individual project pages are created dynamically from markdown files. The usage 
 
 All that is needed is to create the Contentlayer config file, edit the Next + Typescript config file, define the content schema (in this case, a schema for projects) and that's it. Afterwards, it is simply a matter of importing that data directly into my project files as needed.
 
-Any new markdown files in the `projectItems` directory will automatically be imported so there are no code configuration to do to add it into the project.
+**Project Schema**:
+
+| field   | type     | notes                                   |
+| ------- | -------- | --------------------------------------- |
+| title   | string   |                                         |
+| content | string   | Small description of the project        |
+| link    | string   | GitHub repo link                        |
+| site    | string   | Live site link                          |
+| src     | string   | location of image src                   |
+| alt     | string   | alt name for image src                  |
+| skills  | string[] | list of skills utilized for the project |
+
+As long as all of the fields are fulfilled when creating a new markdown project file, any new markdown files in the `projectItems` directory will automatically be imported so there are no code configuration to do to add it into the project list.
 
 ## My Process
 
