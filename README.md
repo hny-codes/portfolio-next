@@ -47,15 +47,15 @@ Here are the libraries I used to build this portfolio. Outside basic React with 
 - [shadcn/ui](https://ui.shadcn.com/)
 - [Lucide-Icons](https://lucide.dev/)
 - [Lottie React](https://lottiereact.com/)
-- [Contentful](https://contentlayer.dev/)
+- [Contentlayer.dev](https://contentlayer.dev/)
 
 ### Projects
 
-Individual project pages are created dynamically from markdown files. The usage of Contentlayer allowed fetching of markdown content as data directly into each page. 
+Individual project pages are created dynamically from markdown files. The usage of Contentlayer allowed fetching of markdown content as data directly into each page.
 
 All that is needed is to create the Contentlayer config file, edit the Next + Typescript config file, define the content schema (in this case, a schema for projects) and that's it. Afterwards, it is simply a matter of importing that data directly into my project files as needed.
 
-Any new markdown files in the `projectItems` directory will automatically be imported so there are no code configuration to do to add it into the project. 
+Any new markdown files in the `projectItems` directory will automatically be imported so there are no code configuration to do to add it into the project.
 
 ## My Process
 
@@ -93,8 +93,6 @@ This is not a one-and-done project, as I plan on updating the site and content s
 - Bug fixes
 - UI improvements
 
-
-
 ## Resources
 
 Outside of the documentation of the libraries, here are other resources I have used for this project:
@@ -106,4 +104,4 @@ Outside of the documentation of the libraries, here are other resources I have u
 - [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction) to edit shadcn components
 - [Skill Icons](https://skillicons.dev/) for SVG icons
 - [Haikei](https://haikei.app/) for the SVG background
-- [Contentlayer Documentation](https://contentlayer.dev/docs/getting-started-cddd76b7)
+- [Contentlayer.dev Documentation](https://contentlayer.dev/docs/getting-started-cddd76b7)
