@@ -15,7 +15,7 @@ skills:
   -
 ---
 
-As a developer, having a personal blog is definitely something I wanted to make since not only would it allow me to **improve my writing skills**, but it would also **reinforce** the topics I learned by talking about! 
+As a developer, having a personal blog is definitely something I wanted to make since not only would it allow me to **improve my writing skills**, but it would also **reinforce** the topics I learned by talking about it! 
 
 At the same time, I also wanted to try incorporating something new to my project as this is the perfect opportunity to branch out and try something new — a CMS! 
 
