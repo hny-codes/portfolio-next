@@ -1,11 +1,12 @@
 # Personal Portfolio
 
+![](/public/screenshots/portfolio.png)
+
 A personal portfolio website showcasing myself with contact information, bootstrapped with Next.
 
 ## Table of Contents
 
 - [Purpose](#purpose)
-- [Screenshots](#screenshots)
 - [Setup](#setup)
 - [Built with](#built-with)
   - [Project](#projects)
@@ -15,12 +16,6 @@ A personal portfolio website showcasing myself with contact information, bootstr
 ## Purpose
 
 The purpose of this project is to build a personal portfolio for myself as well as try out new libraries to help assist on building it - a combination of building and learning as I go.
-
-## Screenshots
-
-![](/public/screenshots/screen-desktop.png)
-![](/public/screenshots/screen-mobile1.png)
-![](/public/screenshots/screen-mobile2.png)
 
 ## Setup
 
