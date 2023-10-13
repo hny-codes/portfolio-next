@@ -45,7 +45,7 @@ export default function Navbar() {
             <AvatarFallback>HN</AvatarFallback>
           </Avatar>
         </Link>
-        <div className='gap-4 hidden sm:flex'>
+        <div className='gap-8 hidden sm:flex'>
           <Link href={'/'} className='link-hover'>
             Home
           </Link>

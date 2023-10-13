@@ -20,47 +20,13 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
-
-// Framer Motion values
-const duration: number = 0.5;
-const notifKeyframes = {
-  opacity: [0, 1, 1, 1, 1, 1, 1, 0],
-  y: [-200, -50, -50, -50, -50, -50, -200, -500],
-};
-
-const notifVariants = {
-  before: {
-    opacity: 0,
-    y: -200,
-  },
-  after: {
-    opacity: notifKeyframes.opacity,
-    y: notifKeyframes.y,
-  },
-};
-
-const cardVariants = {
-  before: { opacity: 1, y: 100 },
-  after: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration,
-    },
-  },
-};
-
-const contactVariants = {
-  before: { opacity: 0, y: 200 },
-  after: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration,
-      delay: duration,
-    },
-  },
-};
+import {
+  notifVariants,
+  friendRequestVariant,
+  contactVariants,
+  notifKeyframes,
+  contactDuration,
+} from '@/lib/framerAnim';
 
 export default function ContactPage() {
   const [request, setRequest] = useState<boolean | null>(null);
@@ -92,7 +58,7 @@ export default function ContactPage() {
               opacity: notifKeyframes.opacity,
               y: notifKeyframes.y,
             }}
-            transition={{ duration: duration + 3 }}
+            transition={{ duration: contactDuration + 3 }}
           >
             <Alert
               className={`w-[80%] mx-auto alert ${
@@ -109,7 +75,7 @@ export default function ContactPage() {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={request === true ? 'after' : 'before'}
-            transition={{ duration: duration + 4 }}
+            transition={{ duration: contactDuration + 4 }}
             variants={notifVariants}
           >
             <Alert
@@ -130,7 +96,7 @@ export default function ContactPage() {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={request === false ? 'after' : 'before'}
-            transition={{ duration: duration + 4 }}
+            transition={{ duration: contactDuration + 4 }}
             variants={notifVariants}
           >
             <Alert
@@ -151,8 +117,8 @@ export default function ContactPage() {
           <motion.div
             initial={{ opacity: 0, y: -200 }}
             animate={request === null ? 'before' : 'after'}
-            transition={{ duration, delay: duration }}
-            variants={cardVariants}
+            transition={{ contactDuration, delay: contactDuration }}
+            variants={friendRequestVariant}
           >
             <Card className='w-[60%] mx-auto my-8 max-w-lg -z-10 border-l-[var(--clr-secondary-01)] border-l-8'>
               <CardHeader>
@@ -196,7 +162,7 @@ export default function ContactPage() {
             variants={contactVariants}
           >
             <Card
-              className={`w-[80%] mx-auto max-w-2xl border-l-[var(--clr-secondary-01)] border-l-8 
+              className={`w-[80%] mx-auto max-w-xl border-l-[var(--clr-secondary-01)] border-l-8 
               ${request === null ? 'hidden' : 'block'}`}
             >
               <CardHeader className='flex items-center'>
