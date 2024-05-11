@@ -46,17 +46,18 @@ export default function ProjectCard({
       custom={delay}
       className='project-hover sm:max-w-[400px]'
     >
-      <Card className='h-full sm:grid sm:grid-rows-1'>
-        <CardHeader>
+      <Card className='h-full sm:grid grid-rows-[1fr_0.25fr_50px]'>
+        <CardHeader className='grid grid-rows-[30px_80px_230px]'>
           <CardTitle>{title}</CardTitle>
           <SkillBadge skills={skills} />
-          <Image
-            className='flex-grow object-contain'
-            src={src}
-            alt={alt}
-            width={500}
-            height={700}
-          />
+          <div className='w-full h-[200px] relative border-4 border-double rounded-lg'>
+            <Image
+              className='flex-grow object-cover bg-no-repeat rounded-lg'
+              src={src}
+              alt={alt}
+              fill
+            />
+          </div>
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-between'>
