@@ -14,6 +14,8 @@ skills:
   -
 ---
 
+## Shortly Landing Page
+
 A landing page that also doubles as a web application that allow users to shorten their desired links/URLs. This is another early project where I incorporated [Cypress](https://www.cypress.io/) into my development, **boosting my overall productivity** when it came to testing the API needed for this project.
 
 This project is the solution to one of the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G).

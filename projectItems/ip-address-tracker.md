@@ -12,6 +12,8 @@ skills:
   -
 ---
 
+## IP Address Tracker
+
 » [Full blog write-up here!](https://hny-blogs.vercel.app/posts/ip-address-tracker)
 
 This is the **first** project done utilizing the new **app directory** feature in [Nextjs](https://nextjs.org/). When users enter in an IP address, the web application will display the following information:
