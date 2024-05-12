@@ -1,12 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+
 import { pageVariant } from '@/lib/framerAnim';
 
 export default function AboutInfo() {
@@ -15,34 +10,14 @@ export default function AboutInfo() {
       variants={pageVariant}
       initial='pageInitial'
       animate='pageEnter'
-      className='mb-20 sm:mb-10 sm:w-[80ch] '
+      className='mb-10 sm:mb-10 md:max-w-[50ch] '
     >
       <article>
-        <header className='mb-8'>
-          <h1 className='font-bold text-3xl mb-2'>Character Profile</h1>
-          <h2 className='text-sm italic'>
-            <span className='text-span font-bold'>WARNING</span>: Professional
-            at Google-fu, will search upon{' '}
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger className='italic underline'>
-                  aggro*
-                </TooltipTrigger>
-                <TooltipContent className=''>
-                  <p>
-                    game terminology for becoming the state of being attacked{' '}
-                  </p>
-                  <p className='line-through'>sorry for the joke</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          </h2>
-        </header>
-        <p className='mb-4'>
+        <p className='mb-4 leading-loose'>
           Jokes aside, call me Henry! I&apos;m a{' '}
-          <span className='text-span'> Front-end developer</span> and software
-          development, especially the web, is my lingo. My adventure started
-          back in high school at the age of 16 when I was learning{' '}
+          <span className='text-span font-bold'> Front-end developer</span> and
+          software development, especially the web, is my lingo. My adventure
+          started back in high school at the age of 16 when I was learning{' '}
           <a
             href='https://en.wikipedia.org/wiki/Adobe_Flash'
             target='_blank'
@@ -53,16 +28,16 @@ export default function AboutInfo() {
           (rest in peace 2020) in my multimedia class, learning all sorts of
           design fundamentals.
         </p>
-        <p className='mb-4'>
+        <p className='mb-4 leading-loose'>
           Seeing simple, yet flashy animated graphics move across the screen
           tickled my brain but only accessible via a .swf file. Thus, my
           interest into this field began with one sole question: <br />
           <br />
-          <span className='text-span font-bold text-lg'>
+          <span className='text-span font-bold text-lg my-4'>
             &quot;What if I made this accessible to anyone to enjoy?&quot;
           </span>
         </p>
-        <p className='mb-4'>
+        <p className='mb-4 leading-loose'>
           Fast-forward to today, after several twists and turns in my life,
           front-end development is simply my calling to scratch that high school
           itch. Despite the challenges and continuous learning curve in this
@@ -70,17 +45,17 @@ export default function AboutInfo() {
           <span className='text-span font-bold'> prove</span> it to you and
           myself by creating websites accessible to all.
         </p>
-        <p>
+        <p className='leading-loose'>
           Outside my development life, nothing beats a productive day than
-          sitting down and enjoying a good video game.{' '}
+          sitting down and enjoying a good video game. Coffee, chill, maybe some{' '}
           <a
-            href='https://www.ea.com/games/apex-legends'
+            href='https://www.terraria.org/'
             target='_blank'
             className='underline link-hover'
           >
-            Apex Legends
+            Terraria
           </a>{' '}
-          anyone?
+          - you know it!
         </p>
       </article>
     </motion.section>
