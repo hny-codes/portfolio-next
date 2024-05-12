@@ -23,7 +23,7 @@ export default function ProjectContainer() {
           src={project.src}
           alt={project.alt}
           skills={project.skills}
-          delay={idx}
+          delay={idx / 2}
         />
       ))}
     </motion.div>

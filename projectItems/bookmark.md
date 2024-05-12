@@ -14,6 +14,8 @@ skills:
   -
 ---
 
+## Bookmark Landing Page
+
 This is a landing page that utilizes various libraries for its creation. Similar to other websites, this landing page has a hero section, a content section, multiple call-to-actions, a form, and a footer.
 
 In addition, this is one of my **earliest projects** where I incorporated [Cypress](https://www.cypress.io/), **an end-to-end(E2E) testing framework**, into my workflow.

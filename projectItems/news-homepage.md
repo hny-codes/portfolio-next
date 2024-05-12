@@ -12,6 +12,8 @@ skills:
   -
 ---
 
+## News Homepage
+
 This is a static landing page built using Vanilla JS and CSS with a mobile-first workflow. 
 
 This project is built using [Astro](https://astro.build/), a web framework that is perfect for building static content. Besides Astro, there are **no other frameworks nor libraries** used for this project.
