@@ -33,7 +33,7 @@ export default function Skills() {
       initial='pageInitial'
       whileInView='pageDelayEnter'
       viewport={{ once: true }}
-      className='mb-16 sm:mb-10 sm:flex flex-col sm:gap-8'
+      className='mb-16 sm:mb-10 sm:flex flex-col sm:gap-8 order-2'
     >
       <article className='mb-20 sm:mb-2 animate-delay-enter'>
         <header className='mb-4 flex flex-col'>

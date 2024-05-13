@@ -10,7 +10,7 @@ export default function AboutInfo() {
       variants={pageVariant}
       initial='pageInitial'
       animate='pageEnter'
-      className='mb-10 sm:mb-10 md:max-w-[50ch] '
+      className='mb-10 sm:mb-10 md:max-w-[50ch] order-1'
     >
       <article>
         <p className='mb-4 leading-loose'>
