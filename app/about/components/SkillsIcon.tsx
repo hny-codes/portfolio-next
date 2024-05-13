@@ -10,7 +10,7 @@ import Image from 'next/image';
 export function AstroIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -33,7 +33,7 @@ export function AstroIcon() {
 export function CssIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -56,7 +56,7 @@ export function CssIcon() {
 export function DiscordIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -79,7 +79,7 @@ export function DiscordIcon() {
 export function FigmaIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -102,7 +102,7 @@ export function FigmaIcon() {
 export function GitIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -125,7 +125,7 @@ export function GitIcon() {
 export function GithubIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -148,7 +148,7 @@ export function GithubIcon() {
 export function HTMLIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -171,7 +171,7 @@ export function HTMLIcon() {
 export function JavaScriptIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -194,7 +194,7 @@ export function JavaScriptIcon() {
 export function NextIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -217,7 +217,7 @@ export function NextIcon() {
 export function PythonIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -240,7 +240,7 @@ export function PythonIcon() {
 export function ReactIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -263,7 +263,7 @@ export function ReactIcon() {
 export function TailwindIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -286,7 +286,7 @@ export function TailwindIcon() {
 export function ViteIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image
@@ -309,7 +309,7 @@ export function ViteIcon() {
 export function VSCodeIcon() {
   return (
     <>
-      <TooltipProvider>
+      <TooltipProvider delayDuration={100}>
         <Tooltip>
           <TooltipTrigger>
             <Image

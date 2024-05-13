@@ -17,7 +17,14 @@ import {
   ViteIcon,
 } from './SkillsIcon';
 import { motion } from 'framer-motion';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 import { pageVariant } from '@/lib/framerAnim';
+import Image from 'next/image';
 
 export default function Skills() {
   return (
@@ -26,16 +33,43 @@ export default function Skills() {
       initial='pageInitial'
       whileInView='pageDelayEnter'
       viewport={{ once: true }}
-      className='mb-16 sm:mb-10 sm:flex sm:gap-8 sm:justify-around'
+      className='mb-16 sm:mb-10 sm:flex flex-col sm:gap-8 order-2'
     >
-      <article className='mb-20 animate-delay-enter'>
-        <header className='mb-4'>
-          <h1 className='font-bold text-3xl mb-2'>My Skills Tree</h1>
-          <h2 className='text-sm italic'>
-            I still got more skill points to spare!
+      <article className='mb-20 sm:mb-2 animate-delay-enter'>
+        <header className='mb-4 flex flex-col'>
+          <div className='relative w-[200px] h-[200px] rounded-2xl self-center justify-self-end mb-6 border-4 border-double md:self-start'>
+            <Image
+              src={'/images/profile.jpg'}
+              alt='hny picture'
+              fill
+              className='object-contain rounded-xl'
+            />
+          </div>
+          <h2 className='font-bold text-5xl text-center md:text-left'>
+            Character Profile
           </h2>
+          <div className='mt-1 mb-8 text-center md:text-left'>
+            <span className='text-span font-bold text-sm italic'>WARNING</span>:
+            Professional at Google-fu, will search upon{' '}
+            <TooltipProvider delayDuration={100}>
+              <Tooltip>
+                <TooltipTrigger className='italic underline'>
+                  aggro*
+                </TooltipTrigger>
+                <TooltipContent className=''>
+                  <p>
+                    game terminology for becoming the <br /> state of being
+                    attacked{' '}
+                  </p>
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+          <h3 className='font-bold text-3xl mb-2 text-center md:text-left'>
+            Skills Tree
+          </h3>
         </header>
-        <div className='flex gap-2 flex-wrap'>
+        <div className='flex gap-4 flex-wrap justify-center md:justify-start'>
           <HTMLIcon />
           <CssIcon />
           <JavaScriptIcon />
@@ -46,10 +80,11 @@ export default function Skills() {
       </article>
       <article className='animate-delay-enter'>
         <header className='mb-4'>
-          <h1 className='font-bold text-3xl mb-2'>My Tools Inventory</h1>
-          <h2 className='text-sm italic'>My inventory ain&apos;t full yet!</h2>
+          <h3 className='font-bold text-3xl mb-2 text-center md:text-left'>
+            Tools Inventory
+          </h3>
         </header>
-        <div className='flex gap-2 flex-wrap'>
+        <div className='flex gap-4 flex-wrap justify-center md:justify-start'>
           <AstroIcon />
           <NextIcon />
           <DiscordIcon />
