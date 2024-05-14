@@ -10,7 +10,7 @@ export default function ProjectContainer() {
     <motion.div
       variants={pageVariant}
       animate='projectList'
-      className='flex flex-col gap-4 justify-center sm:grid sm:grid-cols-2 md:grid-cols-3 '
+      className='flex flex-col gap-4 justify-center sm:grid md:grid-cols-2 xl:grid-cols-3 '
     >
       {allProjects.map((project, idx) => (
         <ProjectCard
