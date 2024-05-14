@@ -44,13 +44,13 @@ export default function ProjectCard({
       whileInView='projectCard'
       viewport={{ once: true }}
       custom={delay}
-      className='project-hover sm:max-w-[400px]'
+      className='project-hover max-w-[450px] md:max-w-[550px] justify-self-center'
     >
       <Card className='h-full sm:grid grid-rows-[1fr_0.25fr_50px]'>
-        <CardHeader className='grid grid-rows-[30px_80px_230px]'>
+        <CardHeader className='grid grid-rows-[30px_100px_230px] md:grid-rows-[30px_70px_280px]'>
           <CardTitle>{title}</CardTitle>
           <SkillBadge skills={skills} />
-          <div className='w-full h-[200px] relative border-4 border-double rounded-lg'>
+          <div className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg'>
             <Image
               className='flex-grow object-cover bg-no-repeat rounded-lg'
               src={src}
