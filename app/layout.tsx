@@ -37,9 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${montserrat.className} scroll-smooth`}>
-      <body
-        className={`relative bg-[url('/images/bg.svg')] bg-no-repeat bg-cover h-screen bg-fixed`}
-      >
+      <body className={`relative bg-no-repeat bg-cover h-screen bg-fixed`}>
         <Navbar />
         {children}
         <Analytics />
