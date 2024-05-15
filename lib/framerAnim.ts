@@ -32,6 +32,36 @@ export const pageVariant: Variants = {
   },
 };
 
+// Variants for Hero section - 2 variants for staggering children
+export const heroVariant: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.5,
+    },
+  },
+};
+
+export const buttonVariant: Variants = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+  },
+
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+    },
+  },
+};
+
 // Variants for project cards
 export const cardVariant: Variants = {
   projectCardInitial: {
