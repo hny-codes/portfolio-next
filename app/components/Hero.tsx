@@ -3,79 +3,108 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import ControllerAnim from './ControllerAnim';
-import { MoveRight, Mail } from 'lucide-react';
+import { MoveRight, Mail, Milestone } from 'lucide-react';
 import { useState } from 'react';
 import SkillRain from './SkillRain';
 import { motion } from 'framer-motion';
-import { pageVariant } from '@/lib/framerAnim';
+import { pageVariant, heroVariant, buttonVariant } from '@/lib/framerAnim';
 
 export default function Hero() {
   const [aboutHover, setAboutHover] = useState(false);
   const [contactHover, setContactHover] = useState(false);
+  const [projectHover, setProjectHover] = useState(false);
 
   return (
-    <div className='text-white text-center sm:grid sm:grid-cols-2 sm:items-center sm:p-4 pb-16 sm:my-16 relative'>
-      <motion.section
-        variants={pageVariant}
-        initial='pageInitial'
-        animate='pageEnter'
-        className='font-bold'
-      >
-        <h1 className='text-clamp'>
+    <section className='text-white text-center sm:p-4 relative'>
+      <div className='font-bold flex flex-col justify-center h-screen sm:h-[85vh]'>
+        <motion.h1
+          variants={pageVariant}
+          initial='pageInitial'
+          animate='pageEnter'
+          className='text-clamp'
+        >
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
-        </h1>
-        <ControllerAnim />
-      </motion.section>
-      <motion.section
-        variants={pageVariant}
-        initial='pageInitial'
-        animate='pageDelayEnter'
-        className='w-[85%] mx-auto text-lg sm:text-left font-bold'
-      >
-        <h2 className='mb-4 p-2'>
-          <span className='text-span'>Front-end developer</span> at day, gamer
-          at night
-        </h2>
-        <h3 className='mb-4 p-2'>
-          Specialization in <span className='text-span'>React</span>, the web,
-          and more
-        </h3>
-        <h3 className='mb-4 p-2'>
-          👀 Call me <span className='text-span'>Henry</span>!
-        </h3>
-        <div className='flex flex-col sm:flex-row sm:p-2 items-center gap-4'>
-          <Button variant={'outline'} asChild>
-            <Link
-              href={'/about'}
-              onMouseEnter={() => setAboutHover(true)}
-              onMouseLeave={() => setAboutHover(false)}
+        </motion.h1>
+        <div className='relative'>
+          <ControllerAnim />
+          <motion.div
+            variants={heroVariant}
+            initial='hidden'
+            animate='show'
+            className='[&>*]:mb-8 sm:[&>*]:mb-0 mt-10 sm:mt-0'
+          >
+            <div className='font-medium'>
+              <h2 className='mb-2 text-xl sm:text-2xl'>Software Developer</h2>
+              <span>●</span>
+              <h2 className='mt-2 text-lg sm:text-xl'>
+                <span className='text-span font-bold'>
+                  Frontend (Web) <br />
+                </span>{' '}
+                is my specialty!
+              </h2>
+            </div>
+            <motion.div
+              variants={buttonVariant}
+              className='sm:absolute -bottom-0 left-[15%] md:left-[21%] lg:left-[28%] xl:left-[33%]'
             >
-              About Me{' '}
-              <MoveRight
-                className={`text-black ml-2 transition ${
-                  aboutHover ? 'block' : 'hidden'
-                }`}
-              />
-            </Link>
-          </Button>
-          <Button variant={'outline'} asChild>
-            <Link
-              href={'/contact'}
-              onMouseEnter={() => setContactHover(true)}
-              onMouseLeave={() => setContactHover(false)}
+              <Button variant={'outline'} asChild>
+                <Link
+                  href={'/about'}
+                  onMouseEnter={() => setAboutHover(true)}
+                  onMouseLeave={() => setAboutHover(false)}
+                >
+                  About
+                  <MoveRight
+                    className={`text-black ml-2 transition ${
+                      aboutHover ? 'block' : 'hidden'
+                    }`}
+                  />
+                </Link>
+              </Button>
+            </motion.div>
+            <motion.div
+              variants={buttonVariant}
+              className='sm:absolute -bottom-0 right-[15%] md:right-[21%] lg:right-[28%] xl:right-[33%]'
             >
-              Contact
-              <Mail
-                className={`text-black ml-2 transition ${
-                  contactHover ? 'block' : 'hidden'
-                }`}
-              />
-            </Link>
-          </Button>
+              <Button variant={'outline'} asChild>
+                <Link
+                  href={'/projects'}
+                  onMouseEnter={() => setProjectHover(true)}
+                  onMouseLeave={() => setProjectHover(false)}
+                >
+                  Projects
+                  <Milestone
+                    className={`text-black ml-2 transition ${
+                      projectHover ? 'block' : 'hidden'
+                    }`}
+                  />
+                </Link>
+              </Button>
+            </motion.div>
+            <motion.div
+              variants={buttonVariant}
+              className='sm:absolute -bottom-20 left-0 right-0 mx-auto'
+            >
+              <Button variant={'outline'} asChild>
+                <Link
+                  href={'/contact'}
+                  onMouseEnter={() => setContactHover(true)}
+                  onMouseLeave={() => setContactHover(false)}
+                >
+                  Contact
+                  <Mail
+                    className={`text-black ml-2 transition ${
+                      contactHover ? 'block' : 'hidden'
+                    }`}
+                  />
+                </Link>
+              </Button>
+            </motion.div>
+          </motion.div>
         </div>
-      </motion.section>
+      </div>
       <SkillRain />
-    </div>
+    </section>
   );
 }
