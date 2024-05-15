@@ -48,7 +48,14 @@ export default function ProjectCard({
     >
       <Card className='h-full sm:grid grid-rows-[1fr_0.25fr_50px]'>
         <CardHeader className='grid grid-rows-[30px_100px_230px] md:grid-rows-[30px_70px_280px]'>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle>
+            <Link
+              href={url}
+              className='hover:text-[--clr-secondary-01] transition text-xl line-clamp-1'
+            >
+              {title}
+            </Link>
+          </CardTitle>
           <SkillBadge skills={skills} />
           <div className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg'>
             <Image
@@ -61,9 +68,10 @@ export default function ProjectCard({
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-between'>
-          <div className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'>
-            <Link href={url}>
+          <div className=' hover:transition hover:text-[var(--clr-secondary-01)]'>
+            <Link href={url} className='flex gap-2 font-semibold'>
               <Pencil />
+              View Project
             </Link>
           </div>
           <div className='flex gap-6'>
