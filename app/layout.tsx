@@ -13,19 +13,17 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hny-codes.com'),
-  title: 'Hny-codes | Portfolio',
-  description:
-    'Front-end Developer | A portfolio built with Next.js and Tailwind',
+  title: 'HNY-CODES | Portfolio',
+  description: 'Software Developer | Frontend development is my specialty!',
   icons: {
     icon: '/images/favicon.ico',
   },
   openGraph: {
     type: 'website',
     url: 'https://hny-codes.com',
-    siteName: 'Hny-codes | Portfolio',
-    title: 'Hny-codes',
-    description:
-      'Front-end Developer | A portfolio built with Next.js and Tailwind',
+    siteName: 'HNY-CODES | Portfolio',
+    title: 'HNY-CODES',
+    description: 'Software Developer | Frontend development is my specialty!',
     images: '/images/profile.jpg',
   },
 };
