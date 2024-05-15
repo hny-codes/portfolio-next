@@ -43,7 +43,7 @@ export default function ProjectLayout({
 
   return (
     <article
-      className='text-white sm:grid sm:grid-cols-2 gap-4 sm:max-w-[var(--max-width)] sm:mx-auto'
+      className='text-white md:grid md:grid-cols-2 gap-4 sm:max-w-[var(--max-width)] md:mx-auto md:px-8'
       id='project-article'
     >
       <ProjectPageHeader
