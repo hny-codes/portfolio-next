@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Sheet,
@@ -13,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Menu, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 // Framer motion values
 const navVariants = {
@@ -33,9 +33,11 @@ const item = {
 };
 
 export default function Navbar() {
+  const path = usePathname();
+
   return (
-    <nav className=''>
-      <div className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
+    <header className={`${path === '/' ? 'fixed w-full z-50' : 'block'}`}>
+      <nav className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
         <Link href={'/'} aria-label='Link back to homepage'>
           <Avatar>
             <AvatarImage
@@ -138,7 +140,7 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
