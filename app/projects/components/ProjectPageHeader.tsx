@@ -30,15 +30,15 @@ export default function ProjectPageHeader({
       variants={pageVariant}
       initial='pageInitial'
       animate='pageEnter'
-      className='relative py-24 group rounded-lg text-center sm:max-h-80 sm:mt-4 sm:sticky sm:top-20'
+      className='relative py-36 group rounded-lg text-center md:max-h-80 md:mt-4 md:sticky md:top-20'
     >
       <Image
         src={src}
         alt={alt}
         fill={true}
-        className='object-cover overflow-hidden brightness-50 group-hover:brightness-[0.6] transition  sm:rounded-lg'
+        className='object-cover object-top md:object-center overflow-hidden brightness-50 group-hover:brightness-[0.6] transition  md:rounded-lg'
       />
-      <h1 className='absolute text-3xl sm:text-4xl left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeIn group-hover:animate-fadeOut'>
+      <h1 className='absolute text-3xl md:text-4xl left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeIn group-hover:animate-fadeOut'>
         {title}
       </h1>
       <p className='absolute w-full p-8 left-1/2 -translate-x-1/2 font-bold bottom-1/2 translate-y-1/2 animate-fadeOut group-hover:animate-fadeIn'>
@@ -60,7 +60,7 @@ export default function ProjectPageHeader({
           <Github />
         </a>
       </div>
-      <div className='hidden sm:block absolute sm:-bottom-20 xl:-bottom-12'>
+      <div className='hidden md:block absolute md:-bottom-20 lg:-bottom-[4.2rem] xl:-bottom-12'>
         <SkillBadge skills={skills} />
       </div>
     </motion.div>
