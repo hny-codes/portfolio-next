@@ -42,7 +42,7 @@ export default function SkillRain() {
       sm:[&>*:nth-child(2)]:left-[15%] 
 
       [&>*:nth-child(3)]:left-[30%] 
-      sm:[&>*:nth-child(3)]:left-[40%] 
+      sm:[&>*:nth-child(3)]:left-[25%] 
 
       [&>*:nth-child(4)]:right-[10%] 
       sm:[&>*:nth-child(4)]:right-[5%] 
@@ -51,8 +51,8 @@ export default function SkillRain() {
       sm:[&>*:nth-child(5)]:right-[15%] 
 
       [&>*:nth-child(6)]:right-[30%]
-      sm:[&>*:nth-child(6)]:right-[45%]
-       -top-52 sm:top-0 sm:px-4 brightness-[0.6] -z-10`}
+      sm:[&>*:nth-child(6)]:right-[25%]
+      -top-4 sm:top-0 sm:px-4 brightness-[1.1] -z-10`}
     >
       <SkillItem variant={itemVariants} customVal={-3} image='Astro' />
       <SkillItem variant={itemVariants} customVal={-2} image='Javascript' />
