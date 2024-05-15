@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-![](/public/screenshots/portfolio.png)
+![](/public/screenshots/portfolio2.png)
 
-A personal portfolio website showcasing myself with contact information, bootstrapped with Next.
+A personal portfolio website, made with Next and Contentlayer. 
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ $ npm run dev
 
 Here are the libraries I used to build this portfolio. Outside basic React with JavaScript, everything used here is a new learning experience for me.
 
-- [Next.js 13.4.4](https://nextjs.org/) using App router
+- [Next.js 14.2.3](https://nextjs.org/) using App router
 - Typescript
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion Animation Library](https://www.framer.com/motion/)
