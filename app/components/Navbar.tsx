@@ -74,7 +74,7 @@ export default function Navbar() {
         <div className='sm:hidden'>
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant='ghost'>
+              <Button variant='ghost' aria-label='Menu'>
                 <Menu />
               </Button>
             </SheetTrigger>
