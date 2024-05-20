@@ -74,11 +74,9 @@ export default function Navbar() {
         <div className='sm:hidden'>
           <Sheet>
             <SheetTrigger asChild>
-              <div className=''>
-                <Button variant='ghost' aria-label='Menu Button'>
-                  <Menu />
-                </Button>
-              </div>
+              <Button variant='ghost'>
+                <Menu />
+              </Button>
             </SheetTrigger>
             <SheetContent size={'full'} className='flex flex-col items-center'>
               <SheetHeader className='mt-20'>
