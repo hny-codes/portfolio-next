@@ -79,6 +79,7 @@ export default function ProjectCard({
               href={site}
               target='_blank'
               className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
+              aria-label='Link to project website in new tab'
             >
               <ExternalLink />
             </a>
@@ -86,6 +87,7 @@ export default function ProjectCard({
               href={link}
               target='_blank'
               className='hover:rotate-12 hover:transition hover:text-[var(--clr-secondary-01)]'
+              aria-label='Link to project github repository in new tab'
             >
               <Github />
             </a>
