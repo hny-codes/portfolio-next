@@ -80,7 +80,7 @@ export default function Navbar() {
                 </Button>
               </div>
             </SheetTrigger>
-            <SheetContent size={'full'}>
+            <SheetContent size={'full'} className='flex flex-col items-center'>
               <SheetHeader className='mt-20'>
                 <motion.div
                   initial='hidden'
@@ -122,7 +122,7 @@ export default function Navbar() {
                   </motion.div>
                 </motion.div>
               </SheetHeader>
-              <div className='flex gap-8 justify-center items-center my-16'>
+              <div className='flex gap-8 justify-center items-center my-10 border-t-4 w-fit pt-8 [&>*]:px-2'>
                 <a
                   href='https://github.com/hny-codes'
                   target='_blank'
