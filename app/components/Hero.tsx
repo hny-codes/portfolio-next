@@ -7,7 +7,7 @@ import { MoveRight, Mail, Milestone } from 'lucide-react';
 import { useState } from 'react';
 import SkillRain from './SkillRain';
 import { motion } from 'framer-motion';
-import { pageVariant, heroVariant, buttonVariant } from '@/lib/framerAnim';
+import { heroVariant, buttonVariant } from '@/lib/framerAnim';
 
 export default function Hero() {
   const [aboutHover, setAboutHover] = useState(false);
@@ -18,10 +18,13 @@ export default function Hero() {
     <section className='text-white text-center sm:p-4 relative'>
       <div className='font-bold flex flex-col justify-center h-screen sm:h-[85vh]'>
         <motion.h1
-          variants={pageVariant}
-          initial='pageInitial'
-          animate='pageEnter'
           className='text-clamp'
+          initial={{ opacity: 0, translateY: 50 }}
+          animate={{
+            opacity: 1,
+            translateY: 0,
+            transition: { type: 'spring' },
+          }}
         >
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
