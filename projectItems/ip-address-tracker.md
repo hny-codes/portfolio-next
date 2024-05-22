@@ -23,7 +23,7 @@ This is the **first** project done utilizing the new **app directory** feature i
 - Timezone
 - ISP
 
-In addition, the web application will also create a interactive map with a marker showing the physical location of the IP address.
+In addition, the web application will also create a interactive map with a marker showing the physical location of the IP address. Users can drag and zoom in/out of the map to find additional information regarding the selected location.
 
 This project is the solution to one of the [Frontend Mentor challenges](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0).
 

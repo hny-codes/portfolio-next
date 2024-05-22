@@ -18,13 +18,13 @@ export default function ProjectPageBody({ skills, html }: Props) {
       variants={pageVariant}
       initial='pageInitial'
       animate='pageDelayEnter'
-      className='px-8 sm:max-w-[var(--max-width)] sm:mx-auto mt-10 sm:mt-0 mb-10 sm:mb-16  bg-gray-100/10 sm:rounded-3xl pt-4 pb-2 sm:pb-0'
+      className='px-8 md:max-w-[var(--max-width)] md:mx-auto mt-10 md:mt-0 mb-10 md:mb-16  bg-gray-100/10 md:rounded-3xl pt-4 pb-2 md:pb-0'
     >
-      <div className='border-b-2 pb-4 sm:hidden'>
+      <div className='border-b-2 pb-4 md:hidden'>
         <SkillBadge skills={skills} />
       </div>
       <div
-        className='mt-4 project-page sm:border-t-2 sm:pt-4'
+        className='mt-4 project-page md:border-t-2 md:pt-4'
         dangerouslySetInnerHTML={{ __html: html }}
       />
       <div className='flex justify-between my-10 border-t-2 pt-4'>

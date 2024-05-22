@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import {
   Sheet,
@@ -13,6 +12,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { Menu, Github, Linkedin, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 
 // Framer motion values
 const navVariants = {
@@ -33,9 +33,11 @@ const item = {
 };
 
 export default function Navbar() {
+  const path = usePathname();
+
   return (
-    <nav className=''>
-      <div className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
+    <header className={`${path === '/' ? 'fixed w-full z-50' : 'block'}`}>
+      <nav className='p-8 flex gap-4 justify-between sm:justify-normal items-center text-white sm:max-w-[var(--max-width)] sm:mx-auto'>
         <Link href={'/'} aria-label='Link back to homepage'>
           <Avatar>
             <AvatarImage
@@ -72,13 +74,11 @@ export default function Navbar() {
         <div className='sm:hidden'>
           <Sheet>
             <SheetTrigger asChild>
-              <div className=''>
-                <Button variant='ghost' aria-label='Menu Button'>
-                  <Menu />
-                </Button>
-              </div>
+              <Button variant='ghost' aria-label='Menu'>
+                <Menu />
+              </Button>
             </SheetTrigger>
-            <SheetContent size={'full'}>
+            <SheetContent size={'full'} className='flex flex-col items-center'>
               <SheetHeader className='mt-20'>
                 <motion.div
                   initial='hidden'
@@ -120,7 +120,7 @@ export default function Navbar() {
                   </motion.div>
                 </motion.div>
               </SheetHeader>
-              <div className='flex gap-8 justify-center items-center my-16'>
+              <div className='flex gap-8 justify-center items-center my-10 border-t-4 w-fit pt-8 [&>*]:px-2'>
                 <a
                   href='https://github.com/hny-codes'
                   target='_blank'
@@ -138,7 +138,7 @@ export default function Navbar() {
             </SheetContent>
           </Sheet>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }

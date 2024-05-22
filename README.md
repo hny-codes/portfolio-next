@@ -1,8 +1,8 @@
 # Personal Portfolio
 
-![](/public/screenshots/portfolio.png)
+![](/public/screenshots/portfolio2.png)
 
-A personal portfolio website showcasing myself with contact information, bootstrapped with Next.
+A personal portfolio website, made with Next and Contentlayer. 
 
 ## Table of Contents
 
@@ -35,7 +35,7 @@ $ npm run dev
 
 Here are the libraries I used to build this portfolio. Outside basic React with JavaScript, everything used here is a new learning experience for me.
 
-- [Next.js 13.4.4](https://nextjs.org/) using App router
+- [Next.js 14.2.3](https://nextjs.org/) using App router
 - Typescript
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Framer Motion Animation Library](https://www.framer.com/motion/)
@@ -102,13 +102,19 @@ This is not a one-and-done project, as I plan on updating the site and content s
 
 ## Resources
 
-Outside of the documentation of the libraries, here are other resources I have used for this project:
+### Prototyping
 
 - [Figma](https://www.figma.com/) for prototyping
 - [Coolers](https://coolors.co/) to help generate a color palette for my portfolio
 - [Site Inspire](https://www.siteinspire.com/) for research
 - [Dribble](https://dribbble.com/) for research
+
+### Content
+
+- [Contentlayer.dev Documentation](https://contentlayer.dev/docs/getting-started-cddd76b7)
+
+### UI and Assets
+
 - [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction) to edit shadcn components
 - [Skill Icons](https://skillicons.dev/) for SVG icons
-- [Haikei](https://haikei.app/) for the SVG background
-- [Contentlayer.dev Documentation](https://contentlayer.dev/docs/getting-started-cddd76b7)
+- [Background Texture by Simon Fairhurst](https://www.figma.com/community/file/1184852075345917340)
