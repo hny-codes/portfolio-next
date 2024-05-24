@@ -12,7 +12,7 @@ export default function ProjectHeader() {
     >
       <h1 className='font-bold text-3xl mb-2'>Projects</h1>
       <h2 className='mb-8'>
-        Take a look at my work! All projects are available on my{' '}
+        Take a look at some of my work! See more projects at my{' '}
         <a
           href='https://github.com/hny-codes'
           target='_blank'
