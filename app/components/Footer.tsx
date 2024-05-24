@@ -24,7 +24,7 @@ export default function Footer() {
             <Github />
           </a>
           <a
-            href='#'
+            href='https://linkedin.com/in/henry-nguyen-00ab23b3'
             className='hover:text-[var(--clr-secondary-01)] link-hover'
             target='_blank'
             aria-label='Link to LinkedIn Profile'

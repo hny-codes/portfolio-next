@@ -10,7 +10,7 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { Menu, Github, Linkedin, ExternalLink, TwitterIcon } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
 
@@ -129,10 +129,18 @@ export default function Navbar() {
                   <Github />
                 </a>
                 <a
-                  href='#'
+                  href='https://linkedin.com/in/henry-nguyen-00ab23b3'
+                  target='_blank'
                   className='hover:text-[var(--clr-secondary-01)] link-hover'
                 >
                   <Linkedin />
+                </a>
+                <a
+                  href='https://x.com/hny_codes'
+                  target='_blank'
+                  className='hover:text-[var(--clr-secondary-01)] link-hover'
+                >
+                  <TwitterIcon />
                 </a>
               </div>
             </SheetContent>
