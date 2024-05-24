@@ -24,7 +24,7 @@ export default function Error({
           // Attempt to recover by trying to re-render the segment
           () => reset()
         }
-        className='text-lg my-16 animate-bounce'
+        className='text-lg my-16 py-8 animate-bounce'
       >
         Try again
       </Button>
