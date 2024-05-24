@@ -177,7 +177,7 @@ export default function ContactPage() {
                       hny-codes@protonmail.com
                     </a>
                   </div>
-                  <div className='flex justify-evenly mt-8 font-bold'>
+                  <div className='flex justify-evenly mt-8 font-bold gap-4'>
                     <a
                       href='https://github.com/hny-codes'
                       target='_blank'
