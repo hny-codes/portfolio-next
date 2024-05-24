@@ -2,12 +2,16 @@
 
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import ControllerAnim from './ControllerAnim';
 import { MoveRight, Mail, Milestone } from 'lucide-react';
 import { useState } from 'react';
 import SkillRain from './SkillRain';
 import { motion } from 'framer-motion';
 import { heroVariant, buttonVariant } from '@/lib/framerAnim';
+import dynamic from 'next/dynamic';
+
+const DynamicController = dynamic(() => import('./ControllerAnim'), {
+  ssr: false,
+});
 
 export default function Hero() {
   const [aboutHover, setAboutHover] = useState(false);
@@ -16,21 +20,15 @@ export default function Hero() {
 
   return (
     <section className='text-white text-center sm:p-4 relative'>
-      <div className='font-bold flex flex-col justify-center h-screen sm:h-[85vh]'>
-        <motion.h1
-          className='text-clamp'
-          initial={{ opacity: 0, translateY: 50 }}
-          animate={{
-            opacity: 1,
-            translateY: 0,
-            transition: { type: 'spring' },
-          }}
-        >
+      <div className='font-bold flex flex-col justify-center h-screen sm:h-[85vh] pt-20'>
+        <h1 className='text-4xl sm:text-5xl lg:text-7xl'>
           <span className='text-span'>H</span>NY-
           <span className='text-span'>C</span>ODES
-        </motion.h1>
+        </h1>
         <div className='relative'>
-          <ControllerAnim />
+          <div className='min-h-[200px] sm:min-h-[300px] lg:min-h-[400px]'>
+            <DynamicController />
+          </div>
           <motion.div
             variants={heroVariant}
             initial='hidden'
