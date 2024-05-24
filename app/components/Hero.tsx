@@ -26,14 +26,14 @@ export default function Hero() {
           <span className='text-span'>C</span>ODES
         </h1>
         <div className='relative mb-8 md:mb-0'>
-          <div className='min-h-[200px] sm:min-h-[300px] lg:min-h-[400px]'>
+          <div className='min-h-[150px] sm:min-h-[300px] lg:min-h-[400px]'>
             <DynamicController />
           </div>
           <motion.div
             variants={heroVariant}
             initial='hidden'
             animate='show'
-            className='[&>*]:mb-4 sm:[&>*]:mb-0 mt-10 sm:mt-0'
+            className='[&>*]:mb-4 sm:[&>*]:mb-0'
           >
             <div className='font-medium'>
               <h2 className='mb-2 text-xl sm:text-2xl'>Software Developer</h2>
