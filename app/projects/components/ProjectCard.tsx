@@ -57,14 +57,17 @@ export default function ProjectCard({
             </Link>
           </CardTitle>
           <SkillBadge skills={skills} />
-          <div className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg'>
+          <Link
+            href={url}
+            className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg'
+          >
             <Image
               className='flex-grow object-cover bg-no-repeat rounded-lg'
               src={src}
               alt={alt}
               fill
             />
-          </div>
+          </Link>
         </CardHeader>
         <CardContent>{content}</CardContent>
         <CardFooter className='flex gap-5 justify-between'>
