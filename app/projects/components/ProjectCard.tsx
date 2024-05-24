@@ -59,10 +59,11 @@ export default function ProjectCard({
           <SkillBadge skills={skills} />
           <Link
             href={url}
-            className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg'
+            className='w-full h-[200px] md:h-[250px] relative border-4 border-double rounded-lg group'
           >
             <Image
-              className='flex-grow object-cover bg-no-repeat rounded-lg'
+              className='flex-grow object-cover bg-no-repeat rounded-lg group-hover:scale-105 group-hover:transition'
+              style={{ transition: 'transform .1s ease-in-out' }}
               src={src}
               alt={alt}
               fill
