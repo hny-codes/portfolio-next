@@ -17,6 +17,7 @@ import {
   Linkedin,
   CheckCircle2,
   XCircle,
+  TwitterIcon,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
@@ -172,7 +173,9 @@ export default function ContactPage() {
                 <div className=''>
                   <div className='flex flex-col justify-center items-center'>
                     <h3 className='font-bold'>My Email:</h3>
-                    <p>hny-codes@protonmail.com</p>
+                    <a href='mailto:hny-codes@protonmail.com'>
+                      hny-codes@protonmail.com
+                    </a>
                   </div>
                   <div className='flex justify-evenly mt-8 font-bold'>
                     <a
@@ -184,12 +187,20 @@ export default function ContactPage() {
                       <span className='text-black'>Github</span>
                     </a>
                     <a
-                      href='#'
+                      href='https://linkedin.com/in/henry-nguyen-00ab23b3'
                       target='_blank'
                       className='flex flex-col items-center link-hover hover:rotate-12 hover:transition'
                     >
                       <Linkedin />
                       <span className='text-black'>LinkedIn</span>
+                    </a>
+                    <a
+                      href='https://x.com/hny_codes'
+                      target='_blank'
+                      className='flex flex-col items-center link-hover hover:rotate-12 hover:transition'
+                    >
+                      <TwitterIcon />
+                      <span className='text-black'>Twitter</span>
                     </a>
                   </div>
                 </div>
