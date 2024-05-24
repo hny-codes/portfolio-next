@@ -131,7 +131,7 @@ export default function ContactPage() {
                   hny-codes has sent you a friend request!
                 </CardTitle>
                 <CardDescription className='ml-14'>
-                  Junior Front-end Developer
+                  Frontend Developer 
                 </CardDescription>
               </CardHeader>
               <CardFooter className='flex flex-col sm:flex-row gap-2 justify-between'>
