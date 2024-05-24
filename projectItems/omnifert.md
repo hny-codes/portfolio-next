@@ -3,7 +3,7 @@ title: 'Omnifert'
 content: 'Figma design turned alive - a multipage eCommerce mockup with familiar shopping functionalities'
 link: 'https://github.com/hny-codes/omnifert'
 site: 'https://omnifert.vercel.app/'
-src: '/images/projects/omnifert.png'
+src: '/images/projects/omnifert2.png'
 alt: 'omnifert'
 skills:
   - Astro

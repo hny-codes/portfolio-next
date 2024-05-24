@@ -3,7 +3,7 @@ title: 'Bookmark Landing Page'
 content: 'A landing page example featuring various components with a contact form'
 link: 'https://github.com/hny-codes/bookmark-landing-page'
 site: 'https://hny-bookmark-landing.vercel.app/'
-src: '/images/projects/bookmark.png'
+src: '/images/projects/bookmark2.png'
 alt: 'bookmark landing page image'
 skills:
   - Astro

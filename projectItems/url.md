@@ -3,7 +3,7 @@ title: 'Shortly Landing Page'
 content: 'A web app that allow users to paste in any link/URL they wished to shorten, powered by shrtcode API'
 link: 'https://github.com/hny-codes/shortly-landing-page'
 site: 'https://hny-shortly-landing-page.vercel.app/'
-src: '/images/projects/url.png'
+src: '/images/projects/url2.png'
 alt: 'shortly landing page image'
 skills:
   - Astro
